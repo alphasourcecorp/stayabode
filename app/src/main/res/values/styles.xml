@@ -1,0 +1,241 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--parent="Theme.MaterialComponents.Light.DarkActionBar"-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--do this for changing the color-->
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+        <!--        <item name="android:textColorPrimary">@color/colorGreen</item>-->
+
+        <!--        &lt;!&ndash; android:textColorPrimaryInverse is the  color of the title-->
+        <!--             text in the Toolbar, in the Theme.AppCompat.Light theme:  &ndash;&gt;-->
+        <!--        &lt;!&ndash; <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> &ndash;&gt;-->
+
+        <!--        &lt;!&ndash; android:actionMenuTextColor is the color of the text of-->
+        <!--              action (menu) items in the Toolbar, at least in the-->
+        <!--              Theme.AppCompat theme.-->
+        <!--              For some reason, they already get the textColorPrimary-->
+        <!--              when running on API 21, but not on older versions of-->
+        <!--              Android, so this is only necessary to support older-->
+        <!--              Android versions.&ndash;&gt;-->
+        <!--        <item name="actionMenuTextColor">@color/colorGreen</item>-->
+        <!--        &lt;!&ndash; android:textColorSecondary is the color of the menu-->
+        <!--             overflow icon (three vertical dots) &ndash;&gt;-->
+        <!--        <item name="android:textColorSecondary">@color/colorGreen</item>-->
+
+    </style>
+
+    <style name="DefaultNumberPickerTheme" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <!--<item name="android:selectionDivider">@android:drawable/numberpicker_selection_divider</item>-->
+        <!--<item name="android:selectionDividerHeight">2dp</item>-->
+        <!--<item name="android:selectionDividersDistance">25dp</item>-->
+        <!--<item name="android:internalMinWidth">50dp</item>-->
+        <!--<item name="android:internalMaxHeight">100dp</item>-->
+    </style>
+
+    <!-- Login Splash and OTP Screen theme wihtout Action Bar. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!--do this for changing the color-->
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+
+        <!--        &lt;!&ndash; Chef Main Activity Theme &ndash;&gt;-->
+        <!--        <style name="MyWhiteColorTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--            <item name="windowActionBar">false</item>-->
+        <!--            <item name="colorPrimary">@color/colorWhite</item>-->
+        <!--            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--            <item name="colorAccent">@color/colorAccent</item>-->
+        <!--            <item name="windowNoTitle">true</item>-->
+        <!--            &lt;!&ndash;do this for changing the color&ndash;&gt;-->
+        <!--            <item name="drawerArrowStyle">@style/DrawerHamburgerStyleChef</item>-->
+
+        <!--        </style>-->
+        <!--        <item name="android:textColorPrimary">@color/colorGreen</item>-->
+
+        <!--        &lt;!&ndash; android:textColorPrimaryInverse is the  color of the title-->
+        <!--             text in the Toolbar, in the Theme.AppCompat.Light theme:  &ndash;&gt;-->
+        <!--        &lt;!&ndash; <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> &ndash;&gt;-->
+
+        <!--        &lt;!&ndash; android:actionMenuTextColor is the color of the text of-->
+        <!--              action (menu) items in the Toolbar, at least in the-->
+        <!--              Theme.AppCompat theme.-->
+        <!--              For some reason, they already get the textColorPrimary-->
+        <!--              when running on API 21, but not on older versions of-->
+        <!--              Android, so this is only necessary to support older-->
+        <!--              Android versions.&ndash;&gt;-->
+        <!--        <item name="actionMenuTextColor">@color/colorGreen</item>-->
+        <!--        &lt;!&ndash; android:textColorSecondary is the color of the menu-->
+        <!--             overflow icon (three vertical dots) &ndash;&gt;-->
+        <!--        <item name="android:textColorSecondary">@color/colorGreen</item>-->
+
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+        <item name="color">@color/colorGreen</item>
+    </style>
+
+    <style name="DrawerHamburgerStyleChef" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+
+    <style name="ImageRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_star</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="SwitchThemeChef" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#0CA226</item>
+    </style>
+
+    <style name="SwitchThemeConsumer" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/colorConsumerPrimary</item>
+    </style>
+
+
+    <!--    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">-->
+    <!--        <item name="tabMaxWidth">100dp</item>-->
+    <!--        <item name="tabIndicatorColor">@color/colorPrimaryDark</item>-->
+    <!--        <item name="tabIndicatorHeight">2dp</item>-->
+    <!--        <item name="tabPaddingStart">12dp</item>-->
+    <!--        <item name="tabPaddingEnd">12dp</item>-->
+    <!--        <item name="tabBackground">?attr/selectableItemBackground</item>-->
+    <!--        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>-->
+    <!--        <item name="tabSelectedTextColor">@color/colorPrimaryDark</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">-->
+    <!--        <item name="android:textSize">14sp</item>-->
+    <!--        <item name="android:textAllCaps">false</item>-->
+    <!--        <item name="android:singleLine">true</item>-->
+    <!--    </style>-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- Pop Up Quick Action Modes -->
+
+
+    <style name="Animations" />
+
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="ToolBarFont" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorConsumerNotifiactionText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CheckBoxConsumer" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#707070</item>
+        <item name="android:colorControlActivated">@color/colorConsumerPrimary</item>
+    </style>
+
+    <style name="RadioButtnConsumer" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlActivated">@color/colorConsumerPrimary</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_border</item>
+    </style>
+
+    <style name="AnimationWindow">
+        <item name="android:windowEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_left_out</item>
+    </style>
+
+
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabLayoutTextAppearance</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TabLayoutSortAndFilter" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabLayoutTextAppearanceSortAndFilter</item>
+    </style>
+
+    <style name="TabLayoutTextAppearanceSortAndFilter" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

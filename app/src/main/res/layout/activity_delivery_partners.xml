@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+<!--    <include-->
+<!--        layout="@layout/toolbar_layout"-->
+<!--        android:id="@+id/toolbarlayout"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Partner Status"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/back"
+        android:id="@+id/searchIcon"
+        android:src="@drawable/search_icon"/>
+
+
+
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pagetitle"
+        card_view:layout_constraintTop_toBottomOf="@+id/pagetitle"
+        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+        app:cardBackgroundColor="@color/colorLoginCardBackground"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLoginCardBackground"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/searchLayout"
+                android:background="@drawable/edittext_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/search_icon"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search Delivery Partner"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:id="@+id/search"
+                        android:background="@android:color/transparent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/shimmerLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/noInternetLayout"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <include
+                    layout="@layout/no_internet"/>
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

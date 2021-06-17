@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/subMenuLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1">
+
+            <info.androidhive.fontawesome.FontTextView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:id="@+id/icon"
+                android:layout_weight="0.1"
+                app:solid_icon="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:layout_weight="0.8"
+                android:singleLine="true"
+                android:id="@+id/name"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="15dp"
+                android:textSize="21sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

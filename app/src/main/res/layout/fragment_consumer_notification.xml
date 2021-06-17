@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.foodyHive.colive.foodyHive.fragments.consumers.ConsumerNotificationFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Refer your friends"
+        app:titleTextAppearance="@style/ToolBarFont"
+        app:titleTextColor="@color/colorConsumerNotifiactionText"
+        tools:targetApi="lollipop">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/pointsEarnedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingVertical="10dp"
+            android:paddingLeft="25dp"
+            android:text="Points Earned"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pointsEarnedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointsEarnedText"
+            android:layout_toRightOf="@+id/pointsEarnedText"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingVertical="10dp"
+            android:paddingLeft="15dp"
+            android:text="0"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pointsUsedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingVertical="10dp"
+            android:paddingRight="25dp"
+            android:text="0"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pointsUsedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointsUsedValue"
+            android:layout_toLeftOf="@+id/pointsUsedValue"
+            android:layout_toRightOf="@+id/pointsEarnedValue"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="right"
+            android:paddingVertical="10dp"
+            android:paddingRight="15dp"
+            android:text="Remaining Points"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/toplayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/apply_referal_id"
+                    android:layout_width="195dp"
+
+                    android:layout_height="50dp"
+                    android:layout_below="@id/toplayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/conusmer_bottom_layout_border"
+                    android:text="Apply Referral code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/referImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apply_referal_id"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/refer_code_image" />
+
+                <TextView
+                    android:id="@+id/inviteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/referImage"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="15dp"
+                    android:text="@string/code_invite"
+                    android:textColor="#4D4949"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/yourscour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inviteText"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorConsumerPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/inviteCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yourscour"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorConsumerPrimary"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/inviteButton"
+                    android:layout_width="195dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/inviteCode"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/conusmer_bottom_layout_border"
+                    android:text="Invite Friends"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/referHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inviteButton"
+                    android:layout_marginTop="68dp"
+                    android:gravity="left"
+                    android:paddingHorizontal="15dp"
+                    android:text="Referral History"
+                    android:textColor="#131212"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReferralRootLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/referHeader"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@color/colorWhite"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/referHeader"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="visible"
+                            tools:listitem="@layout/consumer_referral_code_list_item" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/noNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="No Notifications Available!!"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

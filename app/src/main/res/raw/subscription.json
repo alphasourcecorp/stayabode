@@ -1,0 +1,4481 @@
+{
+  "isSuccess": true,
+  "errorMessage": "",
+  "data": [{
+    "id": "0001",
+    "categoryTitle": "WEEKLY SPECIALS",
+    "categorySubTitle": "",
+    "categoryDescription": "",
+    "categoryImg": "",
+    "menuDetails": [{
+      "dishId": "001",
+      "dishImage": [
+        "https://drive.google.com/thumbnail?id=1bigErUym_DpSXpQ43jd3pev6RX_CBGHj"
+      ],
+      "chefName": " ",
+      "dishName": "SINGLE - Weekly Specials Veg",
+      "dishSubName": "",
+      "saleAmount": 800,
+      "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+      "saleKgMg": " ",
+      "calories": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0,
+      "fibre": 0,
+      "sugar": 0,
+      "Breakfast": true,
+      "Lunch": false,
+      "Dinner": false,
+      "Snacks": false,
+      "suitableFor": [
+        "DIABETIC PATIENTS",
+        "PREGNANT WOMEN",
+        "HEART PATIENTS",
+        "GENERAL"
+      ]
+    },
+      {
+        "dishId": "002",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1bigErUym_DpSXpQ43jd3pev6RX_CBGHj"
+        ],
+        "chefName": " ",
+        "dishName": "SINGLE - Weekly Specials Non-Veg",
+        "dishSubName": "",
+        "saleAmount": 1200,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals. Non veg dishes like chicken and fish.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+        "saleKgMg": " ",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": true,
+        "Lunch": false,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+      {
+        "dishId": "003",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1pZGfbzo8qAAdE0iG7eAvA-H0UVvM4Wuy"
+        ],
+        "chefName": " ",
+        "dishName": "COUPLES - Weekly Specials Veg",
+        "dishSubName": "",
+        "saleAmount": 1400,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+        "saleKgMg": " ",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": false,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+      {
+        "dishId": "004",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1pZGfbzo8qAAdE0iG7eAvA-H0UVvM4Wuy"
+        ],
+        "chefName": " ",
+        "dishName": "COUPLES - Weekly Specials Non-Veg",
+        "dishSubName": "",
+        "saleAmount": 2000,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals. Non veg dishes like chicken and fish.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+        "saleKgMg": " ",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": false,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+      {
+        "dishId": "005",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=15OE-qeJRG_WMpM1x6v0nIMSnc1kYvrBt"
+        ],
+        "chefName": " ",
+        "dishName": "FAMILIES - Weekly Specials Veg",
+        "dishSubName": "",
+        "saleAmount": 2200,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week. (Serves-4)",
+        "saleKgMg": " ",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+      {
+        "dishId": "006",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=15OE-qeJRG_WMpM1x6v0nIMSnc1kYvrBt"
+        ],
+        "chefName": " ",
+        "dishName": "FAMILIES - Weekly Specials Non-veg",
+        "dishSubName": "",
+        "saleAmount": 3000,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals. Non veg dishes like chicken and fish.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.(Serves-4)",
+        "saleKgMg": " ",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      }
+    ]
+  },
+    {
+      "id": "0002",
+      "categoryTitle": "MULTI-CUISINES - BENGALI",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1FH9JiuP_VvX8VGjuDOE5V8mvLJTrnnoc"
+        ],
+        "chefName": " ",
+        "dishName": "ALOO POSTO ",
+        "dishSubName": "",
+        "saleAmount": 150,
+        "dishDescription": "Aloo posto is a popular Bengali dish – potatoes cooked in poppy seed paste, served with pooris or plain boiled rice. This delicately flavored curry gets its spice kick from two other trademark Bengali ingredients – mustard oil and panch phoron.",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1JG-XXoq5YLVRiUcDLB3QoR05ESqiNKJV"
+          ],
+          "chefName": " ",
+          "dishName": "CHOR CHORI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "It's basically a dry vegetable dish that has various versions like Alu Chorchori which is made with Potatoes, Alu-Foolgobhi Chorchori which is a dry dish with Potatoes and Cauliflower, Begun Chorchori is made with Brinjal as the main ingredient and so on.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1g8EUZNjB8MUxjvBzGXg0HV-H_FMWLjbT"
+          ],
+          "chefName": " ",
+          "dishName": "BENGALI STYLE CHANA DAL",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Chana Dal is a traditional Bengali dish prepared from Chana Dal (Bengal Gram Lentil), ghee, coconut, and other spices. It is sweet and savory and is best paired with Luchi or Steamed Rice. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1T7hA6-AdXPF9V4M9VaB6w0hCJmdwXNyC"
+          ],
+          "chefName": " ",
+          "dishName": "KUMROR CHOKKA (BENGALI STYLE POTATO & PUMPKIN SABZI)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "The Kumror Chokka Recipe is a classic Bengali dish which is packed with flavours from panch phoran masala and spices and cooked in mustard oil. Kumror means pumpkin in bengali and is a very commonly used vegetable in the Bengali Cuisine. Pumpkin is a very nutritious vegetable, that is low in calories, rich in Vitamin A, potassium, manganese and lots of other essential minerals.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=18wIPNwfsqwxX7n2PcKu8vBcz21-UvWP7"
+          ],
+          "chefName": " ",
+          "dishName": "BENGALI STYLE SOYA SABZI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "A lovely subzi recipe from West Bengal. Big cubes of potatoes are deep-fried and mixed with marinated soya chunks. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1dS6-qtzPIoDtsegmbk_iOYNZdC5ut0R8"
+          ],
+          "chefName": " ",
+          "dishName": "CHANAR DALNA (BENGALIS STYLE PANEER SABZI)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Chanar Dalna is a typical niramish (vegetarian) Bengali dish where homemade paneer balls or koftas are fried and cooked in a lightly spiced, subtly sweet gravy with potatoes. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=11T3CpnVDu9a1rzTXZxKe8FPa5xiXIoVr"
+          ],
+          "chefName": " ",
+          "dishName": "DOI BAIGAN",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Doi begun is a classic Bengali recipe which is immensely popular among Bengalis.subtle fried eggplant pieces are dunked in mildly spicy sweet and tangy yogurt-based gravy. It is mostly relished with plain rice or flat breads like roti, parotta or luchi.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1zpJPuGU6bmKxowqR1IMoVYUnGaMk23Cx"
+          ],
+          "chefName": " ",
+          "dishName": "MACHER JHOL",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Macher Jhol is one of the most popular dishes and is an important part of Bengali cuisine. Prepared using minimal spices, fish, and vegetables like potato and eggplant, Macher Jhol is essentially a spicy fish stew that is enjoyed best with hot steaming rice. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1wJD-TuX1dpZjNw0UhlcufDlh2Cp08M-I"
+          ],
+          "chefName": " ",
+          "dishName": "KOSHA MANGCHO",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "The word kosha is similar in meaning to bhuna, which involves slowly cooking a gravy over low flame for a very long time to get a rich, dark-brown gravy and melt-in-the-mouth mutton pieces. Mutton kosha (or kosha mangsho) can be served with porota or polao. It tastes great even with plain rice. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1nTWrL58W9C2IfNiZ0M1DEEC-OfPX8QRM"
+          ],
+          "chefName": " ",
+          "dishName": "BENGALI CHICKEN CURRY",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "This chicken curry recipe yields tender chicken pieces in a hot, flavourful, stew-like jhol (curry). The defining characteristic of the Bengali-style chicken curry is the presence of potatoes, which, when cooked in the curry, become soft and succulent, full of all the juicy goodness of the curry. This recipe has two parts: the first involves marinating the chicken, and the second, preparing the curry. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1jNiHHnUrW7eM3e6Cd8v2V6zkOnrrW6Aa"
+          ],
+          "chefName": " ",
+          "dishName": "DOI MURGI",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Bengali Doi Murgi or Bengali Chicken Curry is a delicious Bengali style chicken curry where chicken is cooked in a spicy yogurt sauce. ... An aromatic dish made using chicken, onions, and a lot of yogurt flavored with a medley of spices that renders this chicken curry a beautiful aroma and a unique taste. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1gDXz08fYfYfI7rjBtSuNSELP2hizC6Kk"
+          ],
+          "chefName": " ",
+          "dishName": "MUSTURD FISH CURRY",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "It has few ingredients and they play a crucial role.The strong flavor of mustard and the hotness of green chilies makes the dish delicious and unique from other fish curries.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=19KjT34ctYz24j6yXO8W0xNbz-fRcvMY9"
+          ],
+          "chefName": " ",
+          "dishName": "BENGALI VEG PULAO",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "This ‘pulao’ is a little sweet as  Bengalis prefer ‘pulao’ to be a little sweet.  ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=12hn8c5divq1XpaXTKTdY1EOx8G0uK5HU"
+          ],
+          "chefName": " ",
+          "dishName": "BENGALI BASANTI PULAO",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Basanti pulao is a traditional Bengali dish prepared during festivals and special occasions. This aromatic and bright yellow coloured rice is flavoured with whole spices. Raisins and cashews add a royal touch to this dish. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1-_gfGxUffrCIRX_KH7anLBfgln1Rxy3J"
+          ],
+          "chefName": " ",
+          "dishName": "BIRYANI BENGALI STYLE",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "This biryani uses ground biryani masala powder.This is mildly spiced and light. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0003",
+      "categoryTitle": "MULTI-CUISINES - GUJARATI ",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1LTa1be0YBQKtUURQ9jYquNU0EQasZqT1"
+        ],
+        "chefName": " ",
+        "dishName": "GUJARATI KADHI",
+        "dishSubName": "",
+        "saleAmount": 150,
+        "dishDescription": " Kadhi is a traditional Gujarati preparation of a wonderful sweet and spicy curd mixture thickened with besan.",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": true,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=14J-wgjRaTrW-lf9B39SzvymQETvYyFx4"
+          ],
+          "chefName": " ",
+          "dishName": "VAGHARELA BHAAT",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Gujarati style tempered rice or seasoned rice. Mix the rice with spice powders and then temper them with mustard and cumin seeds. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1fSEyQSupLOWZ3-w8fqF1t20yyeAvUSIO"
+          ],
+          "chefName": " ",
+          "dishName": "OONDIYU",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Oondiyu is a preparation of vegetables and fenugreek muthaias cooked in an aromatic blend of spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1xLy5LmG46tn0UsOzS4KP_4WeGw42dE-0"
+          ],
+          "chefName": " ",
+          "dishName": "BARDOLI KI KHICHDI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Bardoli Ki Khichdi Recipe is a spicy khichdi recipe from the region on Bardoli in Gujarat. A combination of vegetables, rice and toor dal, this dish is packed with nutrients. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1Z1i3jq6GNa-ZYg1bqozBeUjfR0gjqgso"
+          ],
+          "chefName": " ",
+          "dishName": "METHI KA THEPLA",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Thepla is a flatbread made of whole wheat flour,oil and spice powders like turmeric,red chilli powder.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1bC8hhNgSkac1qZNYmZt2Q1U8E982_-k1"
+          ],
+          "chefName": " ",
+          "dishName": "GUJARATI DAL",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Gujarati dal recipe is a unique tasting soupy lentil dish that has two contrasting flavors – sweet and sour. A bit of sweet and some sourness in any dish tastes too good and so does in this Gujarati dal. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1yUoesHfu2UDQXjCQuZn5Q6pKJrKNPv-u"
+          ],
+          "chefName": " ",
+          "dishName": "BLACK CHANA CURRY",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Kala Chana or Black Chana is a very good source of vegetarian protein. It can be cooked in a variety of forms like chaat, curries, or ghugni.  ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1spw6VGomyQnXyFy6gY6bPfCQ00sxE9r4"
+          ],
+          "chefName": " ",
+          "dishName": "SURAN SABZI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Fried elephant foot yam, is a crispy spiced veggie dish made with simple, wholesome ingredients. It’s delicious for a snack or side, and pairs great with any number of main courses. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1NwR1JOZFCs3gc--5a4HOAnUcH5oLXHnb"
+          ],
+          "chefName": " ",
+          "dishName": "SEV TAMATER KI SABZI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "An absolutely delectable dish which is packed flavours from green chillies, the stewed tomatoes and the crunchy sev. Serve it along with Thepla oe Bhakri for lunch or dinner. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1Ujf8XEyL1rukiznm1-DEEyPDre1Np89D"
+          ],
+          "chefName": " ",
+          "dishName": "KOBI BATATA NU SHAAK",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Kobi batata Nu Shaak is traditional Gujarati recipe which is prepared as a everyday shaak recipe in Gujarati households. This recipe consists of cabbage and potatoes cooked in traditional Gujarati spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1noG8Dp_sa3YAXXh532VrtX-rqv88EbeU"
+          ],
+          "chefName": " ",
+          "dishName": "PANCHMEL KHICHDI",
+          "dishSubName": " ",
+          "saleAmount": 150,
+          "dishDescription": "This nutritious vegetable panchmel khichdi is made of 4 dals and rice pressure cooked with a generous helping of crunchy vegetables,tomatoes and spice powders. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1E_q7bOv06QT0i4nJ1xIatEsGAahyLBgA"
+          ],
+          "chefName": " ",
+          "dishName": "DAHIWALA MOONG DAL KHICHDI ",
+          "dishSubName": " ",
+          "saleAmount": 150,
+          "dishDescription": " Made with rice,yellow moong dal and curds,along with everyday spices,the Dahiwali Moong dal khichdi has the lingering flavour of curds and as inherent simplicity and lightness that make it very appealing.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=13_XZ1U8sjiBQ8jJp78QcEsSIzBhmQ_RG"
+          ],
+          "chefName": " ",
+          "dishName": "GUJARATI MASALA BAAT ",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Gujarati Khari Bhat or masala bhat is a spicy colourful pulao which is really simple to make.adding curry leaves and peanuts which sounded so good.  ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0004",
+      "categoryTitle": "MULTI-CUISINES - ORISSA ",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1BCuDXlLfEN8Nfnlsx8wI9AeQ9EwTJoKq"
+        ],
+        "chefName": " ",
+        "dishName": "KHICHDI",
+        "dishSubName": " ",
+        "saleAmount": 150,
+        "dishDescription": " Khichdi is a simple, classic Indian dish made with rice and yellow mung lentils. It is actually a very healthy.",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": true,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=13tx0yzHlsBfoTy9orTuPlV_9vTs5mnZo"
+          ],
+          "chefName": " ",
+          "dishName": "CHUNGDI MALAI (PRWANS CURRY)",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Chungdi malai is one of the most coveted dishes of Puri,Coconut milk and shrimp are natural dancing partners ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1hT49Ol_fz0c8wPxh4mIqYjmXf7Vm2XuA"
+          ],
+          "chefName": " ",
+          "dishName": "MACHA GHANTA (FISH CURRY)",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Ghanta in oriya means 'mixed' and each specific ghanta has a typical set of vegetables to be added. Macha ghanta has the additional fish pieces in it. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1ovaz7oSbUT4K7uwxQAnIIPke-SoVNpXn"
+          ],
+          "chefName": " ",
+          "dishName": "DALMA",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Dalma is a Chickpea Dal Cooked With Vegetables and Raw Papaya, a delicacy from the state of Orissa. It can be made using toor (arhar) dal, and an assortment of vegetables typically raw banana, eggplant, green papaya and pumpkins, simmered in a special spice blend. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1z5uAdG_6-C6ChEBV0P09vWsnK5AmFdNl"
+          ],
+          "chefName": " ",
+          "dishName": "KANIKA (SWEET RICE)",
+          "dishSubName": " ",
+          "saleAmount": 150,
+          "dishDescription": "Kanika is a mildly sweet fragrant rice flavored with some spices and ghee (the clarified butter) loaded with cashew nuts and raisins and is colored with the turmeric. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1ZWmFz13gSsLD9QGdbFADe203GK8DGxXO"
+          ],
+          "chefName": " ",
+          "dishName": "PILAF (PULAO)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Pilaf is a rice dish,or  a wheat dish, whose recipe usually involves cooking in stock or broth, adding spices, and other ingredients such as vegetables or meat ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1dG1vp0UzoxNXxmdfvz2-58KAQHtsGBF6"
+          ],
+          "chefName": " ",
+          "dishName": "SANTULA (VEGTABLE CURRY)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Potatoes, raw papaya and brinjals cooked in milk, chillies and masalas. Santula is a very popular vegetable dish of Orrisa.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=17hyu1SYXXLDG0lbbp6SCceloYnnbkb4A"
+          ],
+          "chefName": " ",
+          "dishName": "CHAATU RAI (MUSHROOM CURRY)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "This dish is a traditional Odiya Mushroom dish that shows how tempting it turns out with the touch of Mustard. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=17JCD9pTvr66Sb58bESOFUNgAT54cPlCH"
+          ],
+          "chefName": " ",
+          "dishName": "ALOO POTALA RASA (ALOO PARVAL SABZI)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Aloo potala rasa is a spicy curry prepared with potatoes and pointed gourd. It is one of the popular curries from the state of Odisha. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1lK2eo45Ju5uLSvEA2PA-U65daytoYR94"
+          ],
+          "chefName": " ",
+          "dishName": "BESARA (ALOO, BANANA, RAW PAPAYA)",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Besara is a traditional odia dish which made out with lots of selected vegetables, using mustard paste and little jaggery.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0005",
+      "categoryTitle": "MULTI-CUISINES - MARATHI ",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1IkL46smXtixZlcraSAfiYayfrbbFn3aa"
+        ],
+        "chefName": " ",
+        "dishName": "BARALI VANGI",
+        "dishSubName": " ",
+        "saleAmount": 150,
+        "dishDescription": "Barali vangi is an authentic spicy curry recipe made with purple eggplant and blend of stuffed spices. it is one of the popular curries from the marathi cuisine, loaded with the warmth of goda masala. ",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=146cbxCsv0V-dxBfhPPqITH5uXe5Cfd4I"
+          ],
+          "chefName": " ",
+          "dishName": "PITHALA",
+          "dishSubName": "  ",
+          "saleAmount": 150,
+          "dishDescription": "Pitla is a traditional Maharashtrian curry made with besan (gram flour) and onions. A spicy base of ginger-garlic-green-chillies and onions is cooked with gram flour and water until thick.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1_BPx1Q-iqyeksnPVpOyvOvqprSR0MWib"
+          ],
+          "chefName": " ",
+          "dishName": "AMTI",
+          "dishSubName": " ",
+          "saleAmount": 150,
+          "dishDescription": "It gets its distinct taste from being a gentle blend of spicy, a little sweet and a little tangy flavours. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=17ubG266lVoH2Y6ni5R44UWpsUQOARmwO"
+          ],
+          "chefName": " ",
+          "dishName": "DAL VARAN",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " It’s a very comforting dish and is usually served with plain white rice. The classic combination of the two – the Varan (dal) and Bhaat (rice) is usually said together and is considered one word – Varan Bhaat. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1YTEMzzGpo5D4Gr99PmIt2PnhR8RScd__"
+          ],
+          "chefName": " ",
+          "dishName": "KADHI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Kadhi is a popular North Indian dish, made with besan and dahi as main ingredients along with various spices and pakodas dipped in it. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1JGJD29bcMVBoDjUbu6uzwTfhkIXQJJqT"
+          ],
+          "chefName": " ",
+          "dishName": "PANDARA RASSA",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Pandhra rassa is chicken or mutton broth cooked with coconut. It is a famous recipe from Kolhapur. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1W0L5SFlLXGC5L9v85O9z3S2TID7kdzwJ"
+          ],
+          "chefName": " ",
+          "dishName": "TAMBADA RASAA",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Tambada means Red and Rassa means Stews/Curry.  ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1rQkVkcyC6Pj2qSGnAb_USuVz3ol612Dp"
+          ],
+          "chefName": " ",
+          "dishName": "CHICKEN KOLHAPURI ",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Kolhapuri Chicken is a chicken curry that is full of the rich, varied, spicy kolhapuri flavors ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1zTtT6vlvMYdga4ebzPGWuWDTguKBEjMz"
+          ],
+          "chefName": " ",
+          "dishName": "MASALA BHAAT",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "It is a mixture of spices like goda masala and vegetables. it is generally served for breakfast or lunch and is often termed as tiffin box recipe or lunch box recipe. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1LHeqQd65sVAXsym2VCrwWtb1MLnmgk15"
+          ],
+          "chefName": " ",
+          "dishName": "VARAN BHAAT",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Varan bhaat would read as lentil-rice where varan stands for “lentil curry or stew or dal” and bhaat means “steamed rice”. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1MK9NJKdDl6pcQxRyfSRjL-6vRFqYMaIE"
+          ],
+          "chefName": " ",
+          "dishName": "COCONUT RICE",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "It is made with white rice cooked in a base of coconut milk and combined with shredded coconut meat, water, salt, raisins (optional), and sugar. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1H2w4d2Cxy_aOKWHh6o3dqS9gHJIntABb"
+          ],
+          "chefName": " ",
+          "dishName": "VANGI BHAAT",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Vangi bath is a flavorful dish made with brinjals,spice powder,spices and herbs. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1gVDDcaOSjG0mpVhGwMQu0RrouU5n0Ggn"
+          ],
+          "chefName": " ",
+          "dishName": "TENDLI BHAAT",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Tendli stands for ivy gourd and bhaat stands for rice.Tendli and rice combination turns even heavenly. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1Akua-9XPqco1-na5A1adox5jqcc8IMEb"
+          ],
+          "chefName": " ",
+          "dishName": "KOBDI RASSA",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": " This is a very popular spicy and flavourful curry from coastal region of Maharashtra.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=10tV7UQJQjDaQ2JnBB9xqFzmi1c9cQZGg"
+          ],
+          "chefName": " ",
+          "dishName": "CHICKEN SUKKHA",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": " This is a semi-dry gravy with masala ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0006",
+      "categoryTitle": "MULTI-CUISINES - RAJASTHANI ",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1AFPQcAEskpvFvguSIOedjTHdJDNayJVP"
+        ],
+        "chefName": " ",
+        "dishName": "DAL BATI ",
+        "dishSubName": "",
+        "saleAmount": 150,
+        "dishDescription": "Dal Bati -a traditional dish from the state of Rajasthan in India. Hard wheat balls are baked and then eaten a spicy mix of lentils. It’s topped with lots of ghee which makes it extremely flavorful. ",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": true,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1Q0-luiXm5g9Wko-e75DNgqZIrpm4rPMn"
+          ],
+          "chefName": " ",
+          "dishName": "GATTE KI SABZI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Gatta are gram flour (besan) roundels which are added to a curd based gravy.  ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1i64potYxX88NATvGTzWuW6lHUt4wxjXj"
+          ],
+          "chefName": " ",
+          "dishName": "GATTA CURRY ",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Gatta curry is made with gram flour dumplings boiled in water,sliced and added in a spicy yoghurt curry.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1R3JZ8Byn0M4MHBEWpxJIhlZBmlv0xaBo"
+          ],
+          "chefName": " ",
+          "dishName": "LAAL MAAS",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Delicious mutton cooked in ginger garlic paste, yogurt, turmeric and more. It is meant to be fiery which is made with the combination of Kashmiri red chillies and other popular spices of Rajasthan. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1I_5a4fBBDRL2e5f77wuE0lHC8TRkv1by"
+          ],
+          "chefName": " ",
+          "dishName": "KER SANGRI ",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Ker Sangri is a traditional,spicy sabzi made with thr ker berry and the sangri bean. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=16y3UQVWzaSNHWFGWkL1oEzpasvnt2Ze4"
+          ],
+          "chefName": " ",
+          "dishName": "KABULI PULAO ",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "Very famous and superlicious pulao with very simple ingredients with very tender and soft-cooked meat. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=12-cU2GN9XwK8HzHJ0WlRprW-Nr9XJ6f-"
+          ],
+          "chefName": " ",
+          "dishName": "GATTE MATTER KHICHDI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Gatte ka pulao is spicy rice dish from Marwari cuisine of Rajasthan. This traditional Rajasthani rice recipe is made with chickpeas flour dumplings called gatta and rice cooked with a lot of aromatic spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1eZ6H2f7guBTemRnPzIu0Xj3FcV4qCd4j"
+          ],
+          "chefName": " ",
+          "dishName": "ALOO MATER SAAG ",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " Aloo matar is a mouth watering curry of potato and green peas that tastes delicious when served with phulka roti,chapati or paratha.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=11l6QfJN8rLtH1qJBpi4JnqfgAcU2b_Z7"
+          ],
+          "chefName": " ",
+          "dishName": "DAHI ALOO",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Dahi Aloo is a rich and creamy gravy delicacy from Rajasthan ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1GOtPRmHjPsW5IlpZDjnjKALRCNCkHZc6"
+          ],
+          "chefName": " ",
+          "dishName": "PYAAZ PANEER",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": " creamy curry of soft succulent paneer and plenty of onions in a wonderful medley of spices, herbs and tomatoes. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1n9IYRCIysuBL_vDi9j4lWRMrH6v2Ssy4"
+          ],
+          "chefName": " ",
+          "dishName": "DAL BHANJARI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "Dal banjara is a delicious dal receipe made with chiklewali urad dal and chana dal. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1azDjffBgyuUMfvr-mFUdR6a-AJ8sdv74"
+          ],
+          "chefName": " ",
+          "dishName": "RAJASTHANI KADHI",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "It is usually made with a side dish to serve it along with phulka or rice. It is spicy and is specially made during the winter season. This kadhi has some delicious flavours which comes from the spicy masalas used in the dish. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1M6megdtto-g6JNFZoVjgh18SjpCuhkAA"
+          ],
+          "chefName": " ",
+          "dishName": "PANCHMEL KI SABZI ",
+          "dishSubName": "",
+          "saleAmount": 150,
+          "dishDescription": "A judicious mix of five vegetables- gavarfali,chawli,capsicum,cucumber and carrots.Tossed in aromatic spices,this dry vegetable preparation tastes fantastic when served with rotis and bhakris. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1L_xYs5Q_pFfwh7tSqTw2jZKMWH6-tFbX"
+          ],
+          "chefName": " ",
+          "dishName": "KHATTA MURGH ",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": " Marinate chicken in mango paste and ginger-garlic paste with spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1oLmzV2qTGMOMvg8sTY8pw3s84ANevj9Z"
+          ],
+          "chefName": " ",
+          "dishName": "MURGH AJMERI",
+          "dishSubName": "",
+          "saleAmount": 185,
+          "dishDescription": "It is a spicy chicken delicacy where the marinated chicken pieces are slow cooked with Indian spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0007",
+      "categoryTitle": "SNACK THAT!",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1kRqh_RFZOpp5KmC3elP6nPORDZvnMSGc"
+        ],
+        "chefName": " ",
+        "dishName": "MASALA NACHOS",
+        "dishSubName": " ",
+        "saleAmount": 40,
+        "dishDescription": "Masala nachos are Indian version of nachos. It is prepared with wheat flour and some Indian spices, cut into the nachos shape and fried in Oil. It tastes delicious and very crispy. Masala nachos are great tea time snacks.",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1siAdC2j6-oQ19oWNDQEc3bgl2iX19yoM"
+          ],
+          "chefName": " ",
+          "dishName": "KACHORI (2 PCS SMALL)",
+          "dishSubName": " ",
+          "saleAmount": 20,
+          "dishDescription": "Kachoris are deep fried breads made with ground dal sauteed along with spices and filled into a cover of maida and baking powder. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1siAdC2j6-oQ19oWNDQEc3bgl2iX19yoM"
+          ],
+          "chefName": " ",
+          "dishName": "KACHORI (2 PCS BIG)",
+          "dishSubName": " ",
+          "saleAmount": 45,
+          "dishDescription": "Kachoris are deep fried breads made with ground dal sauteed along with spices and filled into a cover of maida and baking powder. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1YJv5QLuNLmdHglT18_tiPjxpdbJ7GOBX"
+          ],
+          "chefName": " ",
+          "dishName": "MINI VEG ROLL",
+          "dishSubName": " ",
+          "saleAmount": 35,
+          "dishDescription": "This is made with simple veggies like cabbage,carrots and capsicum.The filling is made by sauteing the veggies in a Chinese style on a high flame which lends that nice unique aroma.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1r1WcqLZj_CHLma3D4TfwD0Xi7ezJpYXZ"
+          ],
+          "chefName": " ",
+          "dishName": "ROASTED POTATOES WEDGES",
+          "dishSubName": " ",
+          "saleAmount": 80,
+          "dishDescription": " Potato wedges make for a great appetizer or a snack.These are delicious,crisp,flavorful and spicy.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=13tNAZwz7piOPsMkHCiBkYSgZ7wzjaM8c"
+          ],
+          "chefName": " ",
+          "dishName": "MASALA BHEL",
+          "dishSubName": " ",
+          "saleAmount": 30,
+          "dishDescription": " Masala Bhel is a low calorie snack that is addictive,tastes delicious and is flavored packed with indian masalas.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1dhb9fa4wOLOQAnAVjqCMh_dODUXVeeOC"
+          ],
+          "chefName": " ",
+          "dishName": "BLACK CHANA CHAAT",
+          "dishSubName": " ",
+          "saleAmount": 40,
+          "dishDescription": " Kala chana chaat is a tangy and tasty snack made from black chickpeas. It is much similar to the green chana chaat",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1gRYIEBr5lrChU7pS3P-hjaFWmYj0Ogpa"
+          ],
+          "chefName": " ",
+          "dishName": "ALOO PATTY BURGER",
+          "dishSubName": " ",
+          "saleAmount": 40,
+          "dishDescription": " Tosted bun with a samosa-spiced veggie patty made from potatoes and peas,onion and tomato.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1hd9Bk38UX_KcxTSBdFOrZZP-vao_-yM-"
+          ],
+          "chefName": " ",
+          "dishName": "FALA FAL WRAP",
+          "dishSubName": " ",
+          "saleAmount": 65,
+          "dishDescription": "It is a deep fried chick pea balls,served with a tangy tahini paste(it's a mixture of tahini paste, lemon juice, garlic and water)",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1-AzQOFOfirF6_G1Mi6ZepBuds6Mif4WO"
+          ],
+          "chefName": " ",
+          "dishName": "MISAL PAV",
+          "dishSubName": " ",
+          "saleAmount": 45,
+          "dishDescription": " Misal Pav is a vibrant meal consisting of a spicy sprouted bean curry topped with crunchy Farsan, crisp red onions, and fresh cilantro that is served with lightly buttered Pav or dinner rolls. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=19dasXzOpCFeC_yENaR9lFAheAV98Bu9N"
+          ],
+          "chefName": " ",
+          "dishName": "VADA PAV",
+          "dishSubName": " ",
+          "saleAmount": 10,
+          "dishDescription": "It is basically a savory slider of fried mashed potato fritters stuffed in a dinner roll.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1AF9Y3rv2y54Qz5tsKbU3Iywc5CwiYvPk"
+          ],
+          "chefName": " ",
+          "dishName": "CHOLEY PATTY",
+          "dishSubName": " ",
+          "saleAmount": 20,
+          "dishDescription": "Choley patties are made from chickpea,potato and breadcrumbs.It is flavored with spices and shallow fried in a pan.It is crisp from outside and soft from inside ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1N5Cib6UU_RsKaLF4nDDDq2Ajl33gFK5-"
+          ],
+          "chefName": " ",
+          "dishName": "HUMMUS TOAST",
+          "dishSubName": " ",
+          "saleAmount": 35,
+          "dishDescription": "The combination of dried chickpeas, tahini, and olive oil results in a puree that's rich in vitamin E, antioxidants, calcium, iron, protein, fiber, vitamin A, and thiamine. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1JUBD7_T201wELEADgOEnshz7nERrqFke"
+          ],
+          "chefName": " ",
+          "dishName": "DHOKLA",
+          "dishSubName": " ",
+          "saleAmount": 20,
+          "dishDescription": "It is made with a fermented batter derived from rice, ground urad dal, and chickpea flour. Dhokla can be eaten for breakfast, as a main course, as a side dish, or as a snack.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1-LKTIM77HOFC6LWhnAjE4ghCW3_1-ISs "
+          ],
+          "chefName": " ",
+          "dishName": "BANANA BEANS PORIYAL WRAP",
+          "dishSubName": " ",
+          "saleAmount": 40,
+          "dishDescription": "This south indian stir-fry made with french beans,banana and coconut are wrapped",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "016",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=10blJda7_Sh9nEH-D7WCziHmy8Fn_ZDEM"
+          ],
+          "chefName": " ",
+          "dishName": "STUFFED KULCHA",
+          "dishSubName": " ",
+          "saleAmount": 25,
+          "dishDescription": "Stuffed Vegetable Kulcha is a soft and fluffy Indian leavened bread which is made stuffed with seasonal vegetables. It's also a delicious way to feed more vegetables to kids or use up leftover vegetables form the previous meal.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "017",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1EAYEa2QZGo_PQ1OqNwDB-MNZ8I1H9JlF"
+          ],
+          "chefName": " ",
+          "dishName": "BATATA TOSASTED SANDWICH",
+          "dishSubName": " ",
+          "saleAmount": 35,
+          "dishDescription": "Contains mashed Batata(sweet potato) masala,spread butter and coriander chutney on bread slices,placed mashed batata.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "018",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1vQea8m_8rFh-lgLzsN8Fa30ijBeID2wM"
+          ],
+          "chefName": " ",
+          "dishName": "HUMMUS VEG SANDWICH",
+          "dishSubName": " ",
+          "saleAmount": 35,
+          "dishDescription": "bread slices are layered with a luscious mixture of potatoes and spinach puree flavored with ginger,garlic and green chillies.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "019",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1u1r355RRmd5Z-m9ZYsoyYUjlpkv_az2d"
+          ],
+          "chefName": " ",
+          "dishName": "PANJABI CHOLE",
+          "dishSubName": " ",
+          "saleAmount": 60,
+          "dishDescription": "Chickpeas curry with indian masala",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "020",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1pxjn8OeOfwo-bE3_27ju9bxw7Sw2Q6WD"
+          ],
+          "chefName": " ",
+          "dishName": "MINI VEGETABLE KATHI ROLL",
+          "dishSubName": " ",
+          "saleAmount": 55,
+          "dishDescription": "Kathi roll has a stuffing of assorted veggies, cheese, meat, paneer, soya and a melange of spices",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0008",
+      "categoryTitle": "HEALTHY MORNINGS",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1zBJFnOK9lV6obBTLif1rx5WPZHLo7tt1"
+        ],
+        "chefName": " ",
+        "dishName": "VEGETABLE POHA",
+        "dishSubName": "TAMOTO CHUTNEY",
+        "saleAmount": 65,
+        "dishDescription": "Flattened rice with potato,green chutney and masala with Tomato chutney",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": true,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1ys5b0W2T7xlFuvYIRdeXIHr8ioVsoU5F"
+          ],
+          "chefName": " ",
+          "dishName": "WHEAT UPMA",
+          "dishSubName": " TAMOTO CHUTNEY ",
+          "saleAmount": 50,
+          "dishDescription": "A healthy and tasty breakfast recipe or upma recipe made from the broken or cracked wheat. it is a popular and nutritional alternative to the traditional rava or sooji upma ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1FM8EuCs-EDROpne-MFzRf1qHYnfWdKGZ"
+          ],
+          "chefName": " ",
+          "dishName": "PONGAL",
+          "dishSubName": "TAMOTO CHUTNEY",
+          "saleAmount": 50,
+          "dishDescription": "Pongal is a popular south indian food made with rice and moong dal which is tempered with ghee,curry leaves,black pepper,ginger,cumin and hing.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1dMfwqeqXnX1UGTQu6j1bFdq3sWGbPPIS"
+          ],
+          "chefName": " ",
+          "dishName": "BISI BELE BATH",
+          "dishSubName": "TAMOTO CHUTNEY",
+          "saleAmount": 50,
+          "dishDescription": "Bisibele bathis a popular dish made with rice,lentils,mix veggeies and a special spice powder. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1tiD8BODib2Al5kzfr4VSH0d-T-TuAqd7"
+          ],
+          "chefName": " ",
+          "dishName": "BROKEN WHEAT KHICHDI",
+          "dishSubName": "TAMOTO CHUTNEY",
+          "saleAmount": 65,
+          "dishDescription": " Khichdi using lentils,spices and quick cook veggies with broken wheat.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1LSec7Di6vgTMkVrQvbCjqgNuBIlGeGDv"
+          ],
+          "chefName": " ",
+          "dishName": "RED RICE KHICHDI",
+          "dishSubName": "TAMOTO CHUTNEY",
+          "saleAmount": 90,
+          "dishDescription": "Khichdi using lentils,spices and quick cook veggies with red rice.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1fzFGjKHOySeMMIirK7MnQNmNJ_SXeKM8"
+          ],
+          "chefName": " ",
+          "dishName": "IDLI 3 PCS",
+          "dishSubName": "SAMBER + COCONUT CHUTNEY",
+          "saleAmount": 50,
+          "dishDescription": "A popular south indian breakfast with ground urad dal.idli batter is fermented and steamed cook",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1RGiA-pSchgGCKZsfFian0AvL9du93xS6"
+          ],
+          "chefName": " ",
+          "dishName": "POHA 200",
+          "dishSubName": "MINT CHUTNEY",
+          "saleAmount": 65,
+          "dishDescription": "Flattened rice is steamed cooked with onions,spices and herbs.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1CmS8yv__IU4PXoCY7Kg2uumwxdQ0H0_7"
+          ],
+          "chefName": " ",
+          "dishName": "SEWAIYAN UPMA 200",
+          "dishSubName": "COCONUT CHUTNEY V2",
+          "saleAmount": 50,
+          "dishDescription": "Sewaiyan upma is a popular south indian breakfast made with wheat vermicelli,spices,herbs and peanuts.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=14s-_nP6vLTTHH1p-yMHtNfcTtQw-RAcs"
+          ],
+          "chefName": " ",
+          "dishName": "UPMA 200",
+          "dishSubName": "COCONUT CHUTNEY V2",
+          "saleAmount": 40,
+          "dishDescription": "Upma is a flavorful south indian breakfast dish made from rava or cream of wheat.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1R1Yk0Dj-E9FzjMEjm8Gzzw8pf2PQpPd5"
+          ],
+          "chefName": " ",
+          "dishName": "LEMON RICE 250",
+          "dishSubName": "COCONUT CHUTNEY V2",
+          "saleAmount": 40,
+          "dishDescription": "It is a tempering south india dish prepared by adding lemon juice while stir frying steamed rice in spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1C963XR5aPN-QA13i20WZ99icWgxcipsc"
+          ],
+          "chefName": " ",
+          "dishName": "SET DOSA [3X5] 150",
+          "dishSubName": "COCONUT CHUTNEY V2/SAMBAR",
+          "saleAmount": 50,
+          "dishDescription": "Set dosa is a popular breakfast.A set of soft and thick spongy dosas are served together with coconut chutney and sagu. This is a basic set dosa recipe that can even be used to make dosas without oil on a nonstick tawa. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1iUopk9AQqJw6i8kIvTSQ5CtrvzN2d_sV"
+          ],
+          "chefName": " ",
+          "dishName": "VEG SANDWICH 93",
+          "dishSubName": "KETCHUP",
+          "saleAmount": 40,
+          "dishDescription": "It is so delicious ans is devoid sauces,chutney or cheese with loads of creepy ingredients. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1PPVA7Eygjyp-hZQ8foU7LimNJw1pFS0r"
+          ],
+          "chefName": " ",
+          "dishName": "METHI THEPLA 150",
+          "dishSubName": "ALOO BHAJI",
+          "saleAmount": 120,
+          "dishDescription": "Indian spiced potatoes are seasoned with mustard seeds,turmeric and garlic.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1LxershnFf5IgnZa4Rq9Y9PsEMrae901_"
+          ],
+          "chefName": " ",
+          "dishName": "SABUDANA KHICHDI 200",
+          "dishSubName": "",
+          "saleAmount": 65,
+          "dishDescription": " It is a delicious dish of tapioca pearls(sago) made with potatoes,peanuts.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "016",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1UQdPM6YFAqnTHOHebjQQmAXhT36w7S_S"
+          ],
+          "chefName": " ",
+          "dishName": "TAWA PAROTHA 2PCS",
+          "dishSubName": "ALOO BHAJI",
+          "saleAmount": 40,
+          "dishDescription": "It is plain parathas are indian flatbread that the crisper and flakier version of pulkas.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "017",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1lR3jZwmvfxLU5ERwJxtfIw72G0KLd3IF"
+          ],
+          "chefName": " ",
+          "dishName": "ALOO PARATHA 2PCS",
+          "dishSubName": "CURD",
+          "saleAmount": 100,
+          "dishDescription": "Aloo paratha is a popular Indian breakfast of unleavened whole wheat savory and spiced potato stuffed flatbread.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "018",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1RnJowGa_rGDweotggArL5x1ylEfbZfow"
+          ],
+          "chefName": " ",
+          "dishName": "TAMOTO RICE 250",
+          "dishSubName": "COCONUT CHUTNEY",
+          "saleAmount": 35,
+          "dishDescription": "It is precooked rice with lots of tomatoes and spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "019",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1kfDYF37PdRngH9grexZtTm6SXfCX_m_G"
+          ],
+          "chefName": " ",
+          "dishName": "BREAKFAST QUEADILLA 170",
+          "dishSubName": "KETCHUP",
+          "saleAmount": 110,
+          "dishDescription": "These breakfast quesadillas are stuffed with fluffy scrambled eggs, melt-in-your-mouth pinto beans, fresh herbs and gooey cheddar cheese, all of which contrasts so nicely with the crisp, golden exterior.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "020",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=145sTF2pnljcN8WHTqYGwYGoYSUqAkbu7"
+          ],
+          "chefName": " ",
+          "dishName": "UTTAPAM(3X50) 150",
+          "dishSubName": "COCONUT CHUTNEY V2/SAMBER",
+          "saleAmount": 50,
+          "dishDescription": "Uttappam are south indian breakfast pancakes made with lentils,rice,onions,herbs and spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "021",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1PsXbwAKS6jXQ-ElxfEP8yXrsGcHvgK_9"
+          ],
+          "chefName": " ",
+          "dishName": "PULIYOGARE RICE 200",
+          "dishSubName": "CURD",
+          "saleAmount": 35,
+          "dishDescription": " Puliyogare is a tamarind rice made by tempering precooked rice with spicy tamarind paste.It is very flavorful and tastes.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "022",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1xI7AobUAAULi1QhqSageAzn8CuHckw53"
+          ],
+          "chefName": " ",
+          "dishName": "VEGETABLE RAVA IDLI 3PCS 150",
+          "dishSubName": "COCONUT CHUTNEY/SAMBER",
+          "saleAmount": 55,
+          "dishDescription": "Rava idli is a soft,pillowy savory cake made from rava or suji with vegetables.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0009",
+      "categoryTitle": "Lunch Specials ",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1KS5zhXBwtquxqpLpYMCiIAt1Q-cFzo-S"
+        ],
+        "chefName": " ",
+        "dishName": "ALOO RASSEDAR",
+        "dishSubName": " ",
+        "saleAmount": 175,
+        "dishDescription": "Aloo rasedar is a spiced, thin potato curry made with tomatoes, ginger & spices. No onion no garlic recipe ",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": true,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1m6kJtSVAeRXlt5BjtVUJKA8RPAdiVeXo"
+          ],
+          "chefName": " ",
+          "dishName": "BAIGAN KA SALAN",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Baingan Ka Salan is popular Hyderabadi curry recipe. It contains peanuts, dried coconut, sesame seeds, ginger, and garlic paste, basic Indian spices and, for sourness, either thick tamarind juice is used or curd/yogurt.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1wBA4c9Zyw77mvCy_uXoSyht_fe-rsvrV "
+          ],
+          "chefName": " ",
+          "dishName": "TURAI GREEN PEA MASALA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Turai is also known as ridge gourd and similar to zucchini. Turai is outer skin is bright green in color and inside white pulp and white seeds embedded within in a spongy flesh with peas.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "004",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=18UrTKmxv2g_dzqHbu7o5cLcvhIYhYz42"
+          ],
+          "chefName": " ",
+          "dishName": "KALA CHANA MASALA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Kala Chana is a mildly spiced black chickpeas curry made in the instant pot or a stovetop pressure cooker. This is a simple everyday Punjabi curry, made in a onion-tomato gravy with ginger and garlic.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "005",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1wD2KvH5CuCgpPNDgJ-1Nx6EuW2jF337F"
+          ],
+          "chefName": " ",
+          "dishName": "DUM ALOO KASHMIR!",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Dum Aloo is a delicious recipe of baby potatoes cooked in a gravy or sauce. Baby potatoes curry spiced with fennel, ginger and whole spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "006",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1W1vTzWCGMneyH5s2sGZivi6vwkkYmGgq "
+          ],
+          "chefName": " ",
+          "dishName": "SUEZ MILONI",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It is delecious food prepared by using many vegetables,tomato,onion,spinach,cachew paste,greated cheese and spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "007",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1qvnvf6HFi5DoHC9VaUyQAHv_NtQTkXwu"
+          ],
+          "chefName": " ",
+          "dishName": "MATAR KI NIMONA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "This is a gravy like dish prepared with fresh green peas, onions, tomatoes and spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "008",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1NvMZLOsr2kE8lb3OV0PsH7OPRIzD1ong"
+          ],
+          "chefName": " ",
+          "dishName": "SINDHI CURRY",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It is the most popular Sindhi dish had with chawal. It is made from gavarfali, potatoes, drumstick, bhindi, little besan and Indian spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "009",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1EAImmBUZE6-4QiFrkJncPtPL5GGK3y4v"
+          ],
+          "chefName": " ",
+          "dishName": "SUBZ DIWANI NANDI",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It is a beautiful  medley of lightly roasted vegetables simmered in creamy spinach puree and spiced right with roasted Indian garam masala. This veg handi sabzi is very unique mix vegetable curry, slowly cooked over a slow flame for hours in creamy spinach gravy. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "010",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1xXSqsyW7eMuMI5FFKE9dqOBnJPsLan8U "
+          ],
+          "chefName": " ",
+          "dishName": "ALOO SOABEAN",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It is delecious dish using sya,potato and spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "011",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1vvWBvly8P6FV0xygmMty7IHMAu7KIVBg "
+          ],
+          "chefName": " ",
+          "dishName": "MIX VEG POSTO",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It is very spicy,healthy rich with masala and counted in shahi curry.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "012",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1zgonP4C_E4d4cHDlb27HqPvGJFggoQQp "
+          ],
+          "chefName": " ",
+          "dishName": "SURAN MASALA CURRY",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Suran ki Sabji or yam curry is a delicious, spicy and tangy Indian curry cooked in mustard onion tomato masala gravy. This curry pairs best with steamed rice, pooris or parathas.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "013",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1H19ej63svYzYmgEQpL-2MAqTT3aQz6D4"
+          ],
+          "chefName": " ",
+          "dishName": "AVIAL",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Avial Recipe is a thick mixture of veggies, coconut, seasoned with coconut oil.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "014",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1_PuPcq7YvcU51VN5LyRDqk_-G5iUAUNh"
+          ],
+          "chefName": " ",
+          "dishName": "CHILLI PANEER",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "chilli paneer is a Indo chinese starter or appetizer made by tossing fried paneer in sweet sour and spicy chilli sauce. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "015",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1hrmI01RqeMyFh5szRm-suQvQ8Ike6YVK "
+          ],
+          "chefName": " ",
+          "dishName": "CHILLI CHICKEN",
+          "dishSubName": "",
+          "saleAmount": 200,
+          "dishDescription": "It is a sweet, spicy& slightly sour crispy appetizer made with chicken, bell peppers, garlic, chilli sauce &soya sauce.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "016",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1NEGXbkm3NYVuSolxY_d11zaxKHep7JI6 "
+          ],
+          "chefName": " ",
+          "dishName": "DHABA PANEER",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Cut paneer into bite-size cubes, heat oil in a shallow frying pan over medium heat, add the panner.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "017",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1bSaLuzV_2GpVI7HlPMBV5mdA9p09V4zq"
+          ],
+          "chefName": " ",
+          "dishName": "DHABA CHICKEN",
+          "dishSubName": "",
+          "saleAmount": 200,
+          "dishDescription": "Chicken pieces cooked in onion tomato gravy creates an authentic Dhaba style chicken curry",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "018",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1Kbvk1BeTuiyHtXsHLUYz0ce_Cb9eVi3x"
+          ],
+          "chefName": " ",
+          "dishName": "MURGH TARI WALA",
+          "dishSubName": "",
+          "saleAmount": 200,
+          "dishDescription": "Tari wala is a Punjabi dish, Chicken curry with whole spices, turmeric, ginger and coriander.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "019",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1QXo4AIqNzHSN0A_qAKjFzYy8FpENRMXx "
+          ],
+          "chefName": " ",
+          "dishName": "MATAR PANEER",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Matar paneer is one of the most popular paneer dishes made with green peas, Indian cheese, onions, tomatoes, spices and herbs.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "020",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1pQUQfa7N7Rz2jIR0HPHkkjvnfkVq2lmE"
+          ],
+          "chefName": " ",
+          "dishName": "PALAK MURGH ",
+          "dishSubName": "",
+          "saleAmount": 200,
+          "dishDescription": "Murgh Palak Gravy Recipe is a classic North Indian gravy made with marinated chicken, pureed spinach and whole spices. ",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "021",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1TRI3Jk4KtidCu_Cem9xOIpjdyIpb9KFQ"
+          ],
+          "chefName": " ",
+          "dishName": "LAHSUNI METHI PANEER",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Lehsuni Methi Paneer is a creamy and delicious restaurant style North Indian Curry Recipe.  Paneer is cooked with Kasuri Methi and Garlic creamy gravy.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "022",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1s2kcLbwP02SUjiHIqzon1w__d3TqJI0a"
+          ],
+          "chefName": " ",
+          "dishName": "DAL AMRITSARI",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Amritsari Dal recipe is an authentic winter food among the people of Punjab. The Dal is made with a blend of Black Urad Dal and Channa Dal which is cooked in a pressure cooker. Then the dal is tempered with onions, ginger, garlic and flavoured with authentic spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "023",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1PImRvrOQ2d37FydGLzVcrsSkViHDKqmT"
+          ],
+          "chefName": " ",
+          "dishName": "RAJAMA RASILA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Rajma is kidney beans curry which is made by pressure cooking raw kidney beans which are soaked overnight.The pressure cooked beans are then cooked with onion, tomatoes, ginger-garlic and with spices like coriander, garam masala, chili powder.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "024",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1AOn8HlVphPoXcYO3Vo_HQHx9kIInNxSf"
+          ],
+          "chefName": " ",
+          "dishName": "LOBIA DAL",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Lobia Dal is a very popular North Indian dish and have a thick gravy of onion, garlic, tomatoes and spices.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "025",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1azlmDy334DUqDrbkEj_0qT0jJ_3GQKof"
+          ],
+          "chefName": " ",
+          "dishName": "SAMBAR ",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Sambar is a South Indian staple dish that is served for all the meals including breakfast, lunch, and dinner. It is a stew of yellow lentils with vegetables and spices added to it.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "026",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1-9WFB-lu7ku3g1CMqj6QdyzAVO-KPX9e"
+          ],
+          "chefName": " ",
+          "dishName": "DAL PALAK",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Dal Palak is also one of the popular Indian lentil recipes as it combines the goodness of the pigeon pea lentils as well as spinach.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "027",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1ZUSxkjSw76uid1iMKdCoIhTpR_7P2fpk"
+          ],
+          "chefName": " ",
+          "dishName": "GHAR KI DAL",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Ghar Ki Dal is a mixed dal fry made from four different varieties of lentils and is very much popular in our Indian cuisine. It is a protein-packed dish with the goodness of four different varieties of dal and extra nutrition.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "028",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=10y6cDPcUYv7E9uUo79zrmH0_v7is1wDh"
+          ],
+          "chefName": " ",
+          "dishName": "DAL PANCHMEL",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Panchmel dal is a Rajasthani style Dal which is made by mixing five different varieties of lentils.The mix of five different types of lentils, which generally are hari moong dal, dhuli moong dal, chana dal, kali urad dal and masoor dal.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": true,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "029",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1MJ1fiKzJz5n4a06cku3t6elAHd6fMY4f"
+          ],
+          "chefName": " ",
+          "dishName": "DALMA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Dalma Recipe is a traditional and healthy dish from the Indian state of Odisha. Dalma is a combination of mixed vegetables and lentils tempered with panch phoran masala and garnished with coconut and coriander leaves.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "030",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=131qXPhFZFQJ4kCRKImtv1KhhFcKURbPt"
+          ],
+          "chefName": " ",
+          "dishName": "WATANA KORMA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Watana Korma is made from meat or vegetables braised with cream or yogurt, water or stock, and multiple spices to make a thick glaze or sauce. The dish is also often mixed with slow-cooked and yogurt-marinated meats.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "031",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1tRnyRZT0R3stFE0l3TkBorSAdE0VB4EU"
+          ],
+          "chefName": " ",
+          "dishName": "DAL MILONI",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Dal Miloni is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils and Kidney Beans.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "032",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=14eAH1v9C2gvglR8gl_l7l834fEqSMev_"
+          ],
+          "chefName": " ",
+          "dishName": "LANGAR WALT DAL (SPLIT URAD DAL)",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Langar waali dal is a special lentil recipe prepared with three lentils cooked together and tempered with special spices.This is a no onion -no garlic recipe.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "033",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1pji215192674dO-iSO1meOrN0S2b3hma "
+          ],
+          "chefName": " ",
+          "dishName": "TIKRI PAKWAN",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Pakwan is a deep fried, crisp bread made with all purpose flour. These fried breads have the flavor of carom seeds, cumin and crushed black pepper.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "034",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1-6tMTkQO3ZODCpxYceNnXVxP4YSR7jtv"
+          ],
+          "chefName": " ",
+          "dishName": "TOMATO PAPU",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Tomato pappu is red lentils that is cooked until fall apart tender and simmered with a ginger, tomato and spice sauce.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "035",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1sA4tnKhuorfkG_vMwK2AQrU6b35XsmcB"
+          ],
+          "chefName": " ",
+          "dishName": "MIX VEGETABLE SOYA GINGER SAUCE",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "It has a mild ginger flavor that can be enhanced according to taste and seasonal veggies used.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "036",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1CpzdQ1A4N2x01gNEfa012_r34LGdGDtd"
+          ],
+          "chefName": " ",
+          "dishName": "LAUKI CHANA DAL",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Lauki Chana Dal is a simple nutritious curry made with bottle gourd and bengal gram lentils. This is a North Indian or Punjabi style preparation for this curry made in a pressure cooker.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "037",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1rNID7heA800ktuP0q7o3rAgr8L89P5-w"
+          ],
+          "chefName": " ",
+          "dishName": "PUNJABI CHOLEY MASALA",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Punjabi Chana Masala or Chole Masala is an authentic North Indian style Chickpea Curry made with white chickpeas, freshly powdered spices, onions, tomatoes and herbs.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "038",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1i64potYxX88NATvGTzWuW6lHUt4wxjXj"
+          ],
+          "chefName": " ",
+          "dishName": "GATTA CURRY",
+          "dishSubName": "",
+          "saleAmount": 175,
+          "dishDescription": "Gatta Curry is a delicacy of the Indian state of Rajasthan. In this curry chickpea flour dumplings are cooked in a spicy and tangy yogurt sauce.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": true,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0010",
+      "categoryTitle": "HEALTHY MENU",
+      "categorySubTitle": "",
+      "categoryDescription": "",
+      "categoryImg": "",
+      "menuDetails": [{
+        "dishId": "001",
+        "dishImage": [
+          "https://drive.google.com/thumbnail?id=1sMdxKjoagRLsYS7Lwl7FOQ5EXEBtPfo7"
+        ],
+        "chefName": " ",
+        "dishName": "SINGLE HEALTHY MENU",
+        "dishSubName": " ",
+        "saleAmount": 1000,
+        "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+        "saleKgMg": "",
+        "calories": 0,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugar": 0,
+        "Breakfast": false,
+        "Lunch": true,
+        "Dinner": false,
+        "Snacks": false,
+        "suitableFor": [
+          "DIABETIC PATIENTS",
+          "PREGNANT WOMEN",
+          "HEART PATIENTS",
+          "GENERAL"
+        ]
+      },
+        {
+          "dishId": "002",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1fGr0rYb0QPSVr1G1vXXrvx2GTOEUag0s"
+          ],
+          "chefName": " ",
+          "dishName": "COUPLES HEALTHY MENU",
+          "dishSubName": " ",
+          "saleAmount": 1800,
+          "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        },
+        {
+          "dishId": "003",
+          "dishImage": [
+            "https://drive.google.com/thumbnail?id=1rIEiV0pwwN_v7KKINDY8B5FtsXaaSooJ"
+          ],
+          "chefName": " ",
+          "dishName": "FAMILIES HEALTHY MENU",
+          "dishSubName": " ",
+          "saleAmount": 3200,
+          "dishDescription": "In this meal plan, we shuffle the following dish items from various states for everyday meals.\nNorth Indian - general,\nSouth Indian - general,\nGujarathi,\nRajasthani,\nBengali,\nMarathi\n\nWhen the subscription starts, we shall send detailed dish items for the week.",
+          "saleKgMg": "",
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fibre": 0,
+          "sugar": 0,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "Snacks": false,
+          "suitableFor": [
+            "DIABETIC PATIENTS",
+            "PREGNANT WOMEN",
+            "HEART PATIENTS",
+            "GENERAL"
+          ]
+        }
+      ]
+    }
+  ]
+}

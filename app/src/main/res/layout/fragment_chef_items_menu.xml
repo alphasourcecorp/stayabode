@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="My Menu"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/addBtn"
+        android:layout_below="@+id/menuTitle"
+        android:id="@+id/shimmerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/chef_menu_dish_items_shimmer_layout"/>
+
+
+            <include
+                layout="@layout/chef_menu_dish_items_shimmer_layout"/>
+
+
+
+            <include
+                layout="@layout/chef_menu_dish_items_shimmer_layout"/>
+
+
+
+            <include
+                layout="@layout/chef_menu_dish_items_shimmer_layout"/>
+
+
+            <include
+                layout="@layout/chef_menu_dish_items_shimmer_layout"/>
+
+
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noMenuLayout"
+        android:layout_below="@+id/shimmerLayout"
+        android:visibility="gone">
+
+<!--        <include-->
+<!--            layout="@layout/fragment_chef_noitem_menu"-->
+<!--            />-->
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/noMenus"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="My Menu"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/noItemHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menuTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="You have no menu items currently!"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/subHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noItemHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="Please add some items to your menu"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subHeader"
+                    android:layout_marginTop="40dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/breakfast" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/buttonAddLayout"
+                    android:gravity="bottom">
+
+                    <Button
+                        android:id="@+id/buttonAddItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/chef_add_buttom"
+                        android:text="Add Items"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuTitle"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menuLayout"
+            android:visibility="gone">
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menuTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_below="@+id/recyclerView"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/endOfList"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:layout_below="@+id/recyclerView"
+                android:text="End of list!"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/progressBar"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/addBtn"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/addbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/chef_add_buttom"
+                    android:text="Add Items"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

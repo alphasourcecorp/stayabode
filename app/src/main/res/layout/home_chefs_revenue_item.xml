@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F8F8F8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revenue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/revenueHeader"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May,2020"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.8"
+                android:id="@+id/revenueMonth"
+                android:textColor="@color/colorBlack"/>
+
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/chef_revenue_home_icon"
+                android:layout_weight="0.2"
+                android:layout_gravity="right"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="12,500"
+                android:id="@+id/revenueamount"
+                android:textColor="@color/colorBlack"
+                android:textSize="38sp" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/franchise_in_image" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

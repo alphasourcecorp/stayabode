@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Order Info"
+        app:titleTextAppearance="@style/ToolBarFont"
+        app:titleTextColor="@color/colorConsumerNotifiactionText"
+        tools:targetApi="lollipop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/masala_dosa_image"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/foodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rava Kichadi"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toRightOf="@+id/foodImage" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:scrollbars="vertical"
+                    android:fadeScrollbars="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/recyclerView"/>
+
+
+                <TextView
+                    android:id="@+id/delivered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Ordered Date"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toRightOf="@+id/foodImage"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+                <TextView
+                    android:id="@+id/invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Order Id"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toRightOf="@+id/foodImage"
+                    app:layout_constraintTop_toBottomOf="@+id/delivered" />
+
+
+                <TextView
+                    android:id="@+id/OrderTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Order Total"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toRightOf="@+id/foodImage"
+                    app:layout_constraintTop_toBottomOf="@+id/invoiceNumber" />
+
+                <TextView
+                    android:id="@+id/deliveredDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text=":"
+                    app:layout_constraintLeft_toRightOf="@+id/delivered"
+                    app:layout_constraintTop_toTopOf="@+id/delivered"
+                    app:layout_constraintBottom_toBottomOf="@+id/delivered"
+                    android:textColor="@color/colorConsumerFont"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/invoiceNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text=":"
+                    android:gravity="left|center"
+                    app:layout_constraintLeft_toLeftOf="@+id/deliveredDate"
+                    app:layout_constraintTop_toTopOf="@+id/invoice"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@+id/deliveredDate"
+                    app:layout_constraintTop_toTopOf="@+id/OrderTotal"
+                    app:layout_constraintBottom_toBottomOf="@+id/OrderTotal">
+
+                    <TextView
+                        android:id="@+id/reSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text=": ₹"
+                        android:textColor="@color/colorConsumerFont"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderTotalQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text=""
+                        android:textColor="@color/colorConsumerFont"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorGrey"
+                    app:layout_constraintTop_toBottomOf="@+id/OrderTotal" />
+
+                <TextView
+                    android:id="@+id/paymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Payment Method"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paymentMethodCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentMethod">
+
+                    <TextView
+                        android:id="@+id/paymentMethodType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:gravity="left|center"
+                        android:paddingLeft="15dp"
+                        android:text=""
+                        android:textColor="@color/colorConsumerFont"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/deliverAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Delivery Address"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentMethodCard" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/addressCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/consumer_edit_text_border_black"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/deliverAddress">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:gravity="left"
+                        android:paddingVertical="5dp"
+                        android:paddingLeft="15dp"
+                        android:text=""
+                        android:textColor="@color/colorConsumerFont"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/orderSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Order Summary"
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addressCard" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/orderSummaryCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orderSummary">
+
+                    <RelativeLayout
+                        android:id="@+id/orderSummaryLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/orderQuantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Order Quantity:2"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/orderQuantity"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorGrey" />
+
+                        <TextView
+                            android:id="@+id/mealPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Meal Price"
+                            android:layout_below="@+id/view"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/totalTax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Total Tax"
+                            android:layout_below="@+id/mealPrice"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/deliveryCharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Delivery Charge"
+                            android:layout_below="@+id/totalTax"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/subTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Grandtotal"
+                            android:layout_below="@+id/deliveryCharge"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/reSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="₹"
+                            android:layout_toLeftOf="@+id/mealCost"
+                            android:layout_alignTop="@+id/mealCost"
+                            android:layout_alignBottom="@+id/mealCost"
+                            android:textColor="@color/colorConsumerFont"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/mealCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="0"
+                            android:layout_alignRight="@+id/mealPrice"
+                            android:layout_alignTop="@+id/mealPrice"
+                            android:layout_alignBottom="@+id/mealPrice"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerNotifiactionText"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/reSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="₹"
+                            android:layout_toLeftOf="@+id/taxCost"
+                            android:layout_alignTop="@+id/taxCost"
+                            android:layout_alignBottom="@+id/taxCost"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/taxCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="0"
+                            android:layout_alignRight="@+id/totalTax"
+                            android:layout_alignTop="@+id/totalTax"
+                            android:layout_alignBottom="@+id/totalTax"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerNotifiactionText"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/reSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="₹"
+                            android:layout_toLeftOf="@+id/deliveryCost"
+                            android:layout_alignTop="@+id/deliveryCost"
+                            android:layout_alignBottom="@+id/deliveryCost"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/deliveryCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="0"
+                            android:layout_alignTop="@+id/deliveryCharge"
+                            android:layout_alignBottom="@+id/deliveryCharge"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:textColor="@color/colorConsumerNotifiactionText"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/reSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="₹"
+                            android:layout_toLeftOf="@+id/subtotalCost"
+                            android:layout_alignTop="@+id/subtotalCost"
+                            android:layout_alignBottom="@+id/subtotalCost"
+                            android:textColor="@color/colorConsumerFont"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/subtotalCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="0"
+                            android:layout_alignTop="@+id/subTotal"
+                            android:layout_alignBottom="@+id/subTotal"
+                            android:layout_alignRight="@+id/subTotal"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorConsumerNotifiactionText"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name">Stayabode</string>
+
+    <!-- For avigation Drawer -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- For Side Bar Menus -->
+    <string name="dashboard">Dashboard</string>
+    <string name="frachise">Franchisees</string>
+    <string name="more">More</string>
+    <string name="cms">CMS</string>
+    <string name="my_profile">My Profile</string>
+    <string name="order_food">Order Food</string>
+    <string name="area_management">Area Management</string>
+    <string name="payment_management">Payment Gateway Management</string>
+    <string name="delivery_management">Delivery Support Management</string>
+    <string name="payments_history">Payments History</string>
+    <string name="l1_l2_support">L1/L2 Support</string>
+    <string name="delivery_panel">Delivery Panel</string>
+    <string name="settings">Settings</string>
+    <string name="blog">Blog</string>
+    <string name="logout">Log Out</string>
+
+
+    <!-- For Login Screen Text  and Hints Etc -->
+    <string name="loginHeader">Login</string>
+    <string name="loginSubHeader">Enter you mobile number including the country code\n and we will send you an sms message to login</string>
+    <string name="generateOtp">Generate OTP</string>
+    <string name="otp">OTP</string>
+
+
+    <!-- For Register Screen Hints and Text etc -->
+
+    <string name="fullName">Full Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="emailID">Email ID</string>
+    <string name="signUp">Sign Up</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="newUser">New User?</string>
+    <string name="platform">Platform</string>
+    <string name="by_creating_account">By creating account,</string>
+    <string name="i_accept_the">I accept the </string>
+    <string name="terms_conditions"><u> terms and conditions</u></string>
+
+    <!-- For Verify OTP Screens Text and Hints etc -->
+    <string name="enter_sms_code_header">Enter SMS Code</string>
+    <string name="enter_sms_code_sub_header">Enter your sms code sent to 999999999</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+
+    <!-- Home Page Text , Hints etc -->
+
+    <string name="welcome_text">Welcome To Dashboard</string>
+
+    <!-- Bottom Menu Texts -->
+    <string name="orders">Orders</string>
+    <string name="franchises">Franchises</string>
+    <string name="reports">Reports</string>
+    <string name="notification">Notification</string>
+
+    <string-array name="pricing_list">
+        <item>Basic</item>
+        <item>Standard</item>
+        <item>Premiun</item>
+    </string-array>
+
+
+    <!-- font awesome Icons in string -->
+    <string name="dashboardIcon">&#xf0e4;</string>
+    <string name="manageIcon">&#xf085;</string>
+    <string name="franchiseIcon">&#xf1ad;</string>
+    <string name="cloudKitchenIcon">&#xf085;</string>
+    <string name="chefIcon">&#xf085;</string>
+    <string name="consumerIcon">&#xf007;</string>
+    <string name="bulkIcon">&#xf1b3;</string>
+    <string name="SubscriptionIcon">&#xf0f5;</string>
+    <string name="searchIcon">&#xf002;</string>
+    <string name="ordersIcon">&#xf085;</string>
+    <string name="helpIcon">&#xf059;</string>
+    <string name="logoutIcon">&#xf08b;</string>
+    <string name="calendarIcon">&#xf133;</string>
+    <string name="userIcon">&#xf2be;</string>
+    <string name="settingsIcon">&#xf013;</string>
+    <string name="notificationIcon">&#xf0a2;</string>
+    <string name="trainingVideoIcon">&#xf008;</string>
+    <string name="nutritionIcon">&#xf06c;</string>
+    <string name="qualityManagementIcon">&#xf087;</string>
+    <string name="salesIcon">&#xf201;</string>
+    <string name="reportsIcon">&#xf080;</string>
+    <string name="revenueSharingIcon">&#xf09d;</string>
+    <string name="franchisePricingIcon">&#xf0f2;</string>
+    <string name="pricingIcon">&#xf0d6;</string>
+    <string name="bannerAdsIcon">&#xf0a1;</string>
+    <string name="marketingIcon">&#xf2b5;</string>
+    <string name="paymentGatewayIcon">&#xf0d6;</string>
+    <string name="deliveryPartnerIcon">&#xf207;</string>
+    <string name="integrationIcon">&#xf24d;</string>
+    <string name="beforeExpandIcon">&#xf0d8;</string>
+    <string name="afterExpandIcon">&#xf0d7;</string>
+
+    <!-- Introduction Screen String -->
+
+    <string name="intro_first_main_text">Health on your </string>
+    <string name="intro_second_main_text">Daily meals, </string>
+    <string name="intro_third_main_text">Catering for all </string>
+    <string name="intro_fourth_main_text">Live stream </string>
+
+
+    <string name="intro_first_main_text_second">finger tips</string>
+    <string name="intro_second_main_text_second">sorted!</string>
+    <string name="intro_third_main_text_second">occasions</string>
+    <string name="intro_fourth_main_text_second">your food</string>
+
+    <string name="intro_first_main_text_third"></string>
+    <string name="intro_second_main_text_third"></string>
+    <string name="intro_third_main_text_third"></string>
+    <string name="intro_fourth_main_text_sthird">preparation</string>
+
+    <string name="intro_first_sub_text">Take calorie count and nutrition information\nof your daily meals</string>
+    <string name="intro_second_sub_text">Subscribe for a limitless verity of food options available in\nyour city.Choose from a customized plan daily</string>
+    <string name="intro_third_sub_text">Our catering services are the all-in-one solution if you are\nplanning to throw a birthday party or corporate event</string>
+    <string name="intro_fourth_sub_text">Experiencing the nostalgia of sitting beside your mom and\nwatching your food prepared</string>
+
+    <!-- Auth Modukes String -->
+
+    <string name="auth_granted">Authorization granted</string>
+    <string name="exchange_complete">Exchange completed successfully</string>
+    <string name="refresh_failed">Token refresh failed</string>
+    <string name="exchange_notification">Exchanging code for token</string>
+    <string name="intro_header">OpenID AppAuth Demo</string>
+    <string name="openid_logo_content_description">OpenID Foundation Logo</string>
+    <string name="refresh_token">Refresh token</string>
+    <string name="access_token_expires_at">Access token expires at: %s</string>
+    <string name="no_access_token_returned">No access token returned</string>
+    <string name="no_refresh_token_returned">No refresh token returned</string>
+    <string name="refresh_token_returned">Refresh token returned</string>
+    <string name="no_id_token_returned">No ID token returned</string>
+    <string name="id_token_returned">ID token returned</string>
+    <string name="view_profile">View user info</string>
+    <string name="unknown_expiry">unknown</string>
+    <string name="auth_header">Sign in with:</string>
+    <string name="no_idps_configured">No IDPs are configured. Please edit idp_configs.xml</string>
+    <string name="authorization_failed">Authorization failed</string>
+    <string name="userinfo_profile_content_description">User profile picture</string>
+    <string name="login_hint_value">Account ID (e.g. test@gmail.com)</string>
+    <string name="account_id_description">The Account ID is optional. If specified, it is transmitted as a login_hint parameter in the authorization request.</string>
+    <string name="auth_options">Authorization options:</string>
+    <string name="browser_selector_label">Use browser:</string>
+    <string name="browser_icon_contentDescription">Browser app icon</string>
+    <string name="browser_appauth_default_label">AppAuth heuristic selection</string>
+    <string name="custom_tab_label">"%1$s (custom tab)"</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://foodyhive-web-dev.azurewebsites.net/.well-known/assetlinks.json\" }]</string>
+
+
+    <!--    consumer screen-->
+    <string name="review"><u>Reviews</u></string>
+    <string name="info"><u>Info</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="code_invite">Join me on FoodyHive, online food platform, to order authentic home cooked food from expert home chefs around you. Enter my code IDGF234232 to earn back 50 points on your first purchase!</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="company_txt">Company Name<font color='#FF0000'>*</font></string>
+    <string name="name_txt">Name<font color='#FF0000'>*</font></string>
+    <string name="email_txt">Email Address<font color='#FF0000'>*</font></string>
+    <string name="phone_txt">Phone<font color='#FF0000'>*</font></string>
+    <string name="full_txt">Full Address<font color='#FF0000'>*</font></string>
+    <string name="city_txt">City<font color='#FF0000'>*</font></string>
+    <string name="post_txt">Postal Code<font color='#FF0000'>*</font></string>
+    <string name="state_txt">State<font color='#FF0000'>*</font></string>
+    <string name="country_txt">Country<font color='#FF0000'>*</font></string>
+    <string name="message_txt">Message<font color='#FF0000'>*</font></string>
+
+
+    <string name="n_pwd">New Password<font color='#FF0000'>*</font></string>
+    <string name="c_pwd">Confirm Password<font color='#FF0000'>*</font></string>
+    <string name="companycode_txt">Access Code<font color='#FF0000'>*</font></string>
+    <string name="pwd_txt">Password<font color='#FF0000'>*</font></string>
+    <string name="cpwd_txt">Confirm Password<font color='#FF0000'>*</font></string>
+
+    <string name="addressline1">Address Line 1<font color='#FF0000'>*</font></string>
+    <string name="addressline2">Address Line 2<font color='#FF0000'>*</font></string>
+    <string name="city">City<font color='#FF0000'>*</font></string>
+    <string name="postalcode">Postal Code<font color='#FF0000'>*</font></string>
+    <string name="state">State<font color='#FF0000'>*</font></string>
+    <string name="country">Country<font color='#FF0000'>*</font></string>
+
+    <string name="dishname">dish name<font color='#FF0000'>*</font></string>
+    <string name="qty">qty<font color='#FF0000'>*</font></string>
+
+    <string name="items">Item name<font color='#FF0000'>*</font></string>
+    <string name="denomination">Denomination<font color='#FF0000'>*</font></string>
+    <string name="vendor">Vendor<font color='#FF0000'>*</font></string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:name="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/navigation_my_profile"
+        android:icon="@drawable/my_profile_icon"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/navigation_my_promos"
+        android:icon="@drawable/promo_icon"
+        android:title="My Promos" />
+
+    <item
+        android:id="@+id/navigation_subscription"
+        android:icon="@drawable/order_food_icon"
+        android:title="Order Food" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/info"
+        android:title="Help" />
+
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout"/>
+
+
+
+    <!--<item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/reports"
+        android:title="@string/reports" />-->
+
+</menu>

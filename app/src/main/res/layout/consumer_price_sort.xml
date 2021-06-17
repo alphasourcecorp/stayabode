@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#112132"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <com.appyvet.materialrangebar.RangeBar
+        android:id="@+id/rangeBar"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        app:mrb_rangeBarColor="@color/colorBlack"
+        app:mrb_connectingLineColor="@color/colorConsumerPrimary"
+        app:mrb_minThumbDistance="10"
+        app:mrb_pinColor="@color/colorGreen"
+        app:mrb_pinMaxFont="14sp"
+        app:mrb_pinRadius="15dp"
+        app:mrb_thumbColor="@color/colorGreen"
+        app:mrb_thumbSize="15dp"
+        app:mrb_tickDefaultColor="@color/colorConsumerPrimary"
+        app:mrb_tickEnd="1000"
+        app:mrb_tickLabelSize="16sp"
+        app:mrb_tickStart="10" />
+
+
+    <TextView
+        android:id="@+id/leftPinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_below="@+id/rangeBar"
+        android:textColor="@color/colorConsumerFont"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/rightPinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/rangeBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/colorConsumerFont"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Back"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Manage Users"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/searchIcon"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/search_icon" />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pagetitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/colorLoginCardBackground"
+        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        android:id="@+id/cardView"
+        card_view:cardUseCompatPadding="true"
+        card_view:layout_constraintTop_toBottomOf="@+id/pagetitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLoginCardBackground"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:id="@+id/searchLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/search_icon"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/search"
+                        android:hint="Search Role"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:background="@android:color/transparent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/shimmerLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+
+                    <include
+                        layout="@layout/cloud_kitchen_placeholder_skeleton"/>
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/noInternetLayout"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <include
+                    layout="@layout/no_internet"/>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/recyclerView" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>

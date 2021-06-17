@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#112132"
+            android:text="Notifications"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"/>
+
+
+
+        <Switch
+            android:id="@+id/availableSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:switchMinWidth="26dp"
+            android:maxHeight="16dp"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchThemeConsumer"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:textSize="10sp"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

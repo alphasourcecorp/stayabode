@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+apply from: '../config/android-common.gradle'
+
+group = "net.openid"
+version = "1.0"
+
+
+// use a separate build type for unit tests, so that we can configure the manifest placeholder
+// without interfering with other builds.
+android.buildTypes {
+    forTests {
+        initWith debug
+        manifestPlaceholders = [
+            'appAuthRedirectScheme': 'net.openid.appauth.test'
+        ]
+    }
+}
+
+android.testBuildType "forTests"
+
+dependencies {
+    api "androidx.browser:browser:1.2.0"
+    implementation "androidx.annotation:annotation:1.1.0"
+    apply from: '../config/testdeps.gradle', to:it
+}
+
+apply from: '../config/style.gradle'
+apply from: '../config/coverage.gradle'
+apply from: '../config/javadoc.gradle'
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+bintray {
+
+}
+
+install {
+
+}

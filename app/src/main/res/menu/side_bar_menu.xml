@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="@string/dashboard"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+
+    <group  android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_franchises"
+            android:title="@string/frachise"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_cms"
+            android:title="@string/cms"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_area_support"
+            android:title="@string/area_management"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_payment_support"
+            android:title="@string/payment_management"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_delivery_support"
+            android:title="@string/delivery_management" />
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_payments_history"
+            android:title="@string/payments_history" />
+    </group>
+
+    <group  android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_l1_l2_support"
+            android:title="@string/l1_l2_support"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_delivery_panel"
+            android:title="@string/delivery_panel"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/settings"
+            android:checkableBehavior="none"/>
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_blog"
+            android:title="@string/blog"
+            android:checkableBehavior="none"/>
+
+    </group>
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:title="@string/logout"
+            android:checkableBehavior="none"/>
+    </group>
+
+
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Logout" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

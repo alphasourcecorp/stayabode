@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/reviewHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/userProfileImage"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/consumerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Radha Krishna"
+                android:textColor="@color/colorConsumerFont"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_weight="0.6"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rating_star" />
+
+            <TextView
+                android:id="@+id/ratingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="5.0"
+                android:textSize="16sp"
+                android:textColor="@color/colorConsumerFont" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="(7 June 2020)"
+                android:textSize="12sp"
+                android:textColor="@color/colorViewLine" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewDescription"
+        android:layout_below="@+id/reviewHeaderLayout"
+        android:layout_marginTop="10dp"
+        android:text="The food packaging was perfect, I was impressed with how fast my order arrived, I felt I got great quality for the amount I paid, Food was delicious and surpassed my expectations"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey"
+        android:id="@+id/view"
+        android:layout_below="@+id/reviewDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

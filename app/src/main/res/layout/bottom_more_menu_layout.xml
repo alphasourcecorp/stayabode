@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingRight="0dp"
+    android:layout_marginRight="0dp"
+    android:gravity="right"
+    android:id="@+id/rightMenu"
+    android:layout_gravity="right"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/reportsMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/reports"
+            android:id="@+id/startimg"
+            android:tint="#9E9E9E"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:text="Reports"
+            android:textSize="16sp"
+            android:id="@+id/reportsText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9E9E9E"
+            android:layout_toRightOf="@+id/startimg"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settingsMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings_icon"
+            android:id="@+id/startimg"
+            android:tint="#9E9E9E"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/startimg"
+            android:paddingRight="0dp"
+            android:id="@+id/settingsText"
+            android:text="Settings"
+            android:textColor="#9E9E9E" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myProfileMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_icon"
+            android:id="@+id/startimg"
+            android:tint="#9E9E9E"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/myProfileText"
+            android:layout_toRightOf="@+id/startimg"
+            android:paddingRight="0dp"
+            android:text="My Profile"
+            android:textColor="#9E9E9E" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calendarMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings_icon"
+            android:id="@+id/startimg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:tint="#9E9E9E"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:text="Calendar"
+            android:textColor="#9E9E9E"
+            android:id="@+id/calendarText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/startimg"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logout_icon"
+            android:id="@+id/startimg"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:tint="#9E9E9E"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Logout"
+            android:id="@+id/logoutText"
+            android:textColor="#9E9E9E"
+            android:layout_toRightOf="@+id/startimg"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderMenu"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings_icon"
+            android:id="@+id/startimg"
+            android:tint="#9E9E9E"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Order Food"
+            android:id="@+id/orderText"
+            android:textColor="#9E9E9E"
+            android:layout_toRightOf="@+id/startimg"
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"/>
+
+
+</LinearLayout>

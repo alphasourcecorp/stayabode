@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+
+android {
+
+    defaultConfig {
+        // The entire application package name (com.example )
+        applicationId "stayabode.foodyHive"
+        // min sdk version and play store released version code and version name
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode  2
+        versionName "2.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+      /*production*/
+
+        manifestPlaceholders = [
+                'appAuthRedirectScheme': 'com.onmicrosoft.foodyhiveprod.foodyhive'
+        ]
+
+
+        /*testing*/
+
+//        manifestPlaceholders = [
+//                'appAuthRedirectScheme': 'com.onmicrosoft.cimavi.foodyhive'
+//        ]
+    }
+
+
+    // compile sdk version and build tools version
+    compileSdkVersion 30
+    buildToolsVersion '30.0.0'
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+}
+
+
+//FireBaseCredentials
+
+//Email Id: foodibeesystems@gmail.com
+//
+//        Password: FoodiBee01*
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation files('libs/httpcore-osgi-4.3-beta2.jar');
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+
+    // ccp is used for drop down of country and mobile number country codes
+    implementation project(':ccp')
+    // calendar is used for custom calendar codes
+    implementation project(':calendar')
+    // MPChartLib is used for all kind of charts
+    implementation project(':MPChartLib')
+    // library is used for azure authentication and authorization
+    implementation project(':library')
+    // for firebase push notification message
+    implementation 'com.google.firebase:firebase-messaging:20.1.4'
+    // Image view to show in circle rounded shape
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // Week Calendar library
+    implementation 'noman.weekcalendar:weekcalendar:1.0.6'
+    // Volley library used for networking API calls(PUT,POST,GET,PATCH,DELETE,UPDATE etc..)
+    implementation 'com.android.volley:volley:1.0.0'
+    // Glide library used for Image loading and displaying in imageview
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    // Shimmer is used for showing the loader instead of skeletonview kind of loader
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    // Font awesome to show the code text in image
+    implementation  'info.androidhive:fontawesome:0.0.5'
+    // Image Part
+    implementation 'com.squareup.okio:okio:1.15.0'
+    implementation 'joda-time:joda-time:2.10'
+
+    // Google play services
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    // To Enable Multidex
+    implementation 'com.android.support:multidex:1.0.3'
+    // To show an Toast in animation View
+    implementation 'com.github.johnpersano:supertoasts:2.0'
+    // To show an State Progress bar  in Orders Page(Order Received,Preparing,delivered etc..)
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+    // To show an Price range bar  in Filter & Sort  Page(Min Price 0 to Max Price to 100 etc..)
+    implementation 'com.appyvet:materialrangebar:1.4.8'
+    // Google play services for showing location
+    api 'com.google.android.gms:play-services-location:11.8.0'
+
+    implementation 'co.lujun:androidtagview:1.1.7'
+    //  To upload image to server using this library
+    implementation 'net.gotev:uploadservice:3.4.1'
+    //  To Convert json to gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation "androidx.browser:browser:1.3.0"
+
+    compile 'com.google.android:flexbox:0.2.5'
+}
+
+

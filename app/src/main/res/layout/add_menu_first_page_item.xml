@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstLayout">
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dish Details"
+            android:textSize="16sp"
+            android:id="@+id/dishDetailHeader"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dishName"
+            android:hint="Name of the Dish"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/menu_edittext_border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescription"
+            android:hint="A short Description"
+            android:layout_marginTop="20dp"
+
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/menu_edittext_border"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Weight"
+                android:hint="Weight"
+                android:textSize="14sp"
+                android:layout_weight="0.9"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="g"
+                android:textSize="14sp"
+                android:layout_weight="0.1"
+                android:gravity="right|bottom"
+                android:id="@+id/weightSubText"
+                android:layout_gravity="right"
+                android:textColor="@color/colorGrey"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proteins"
+            android:hint="Proteins"
+            android:layout_marginTop="20dp"
+
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/menu_edittext_border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:hint="Price"
+            android:layout_marginTop="20dp"
+
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/menu_edittext_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/preparationTime"
+                android:hint="Preparation Time"
+                android:textSize="14sp"
+                android:layout_weight="0.9"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="mins"
+                android:textSize="14sp"
+                android:layout_weight="0.1"
+                android:id="@+id/preparationSubText"
+                android:gravity="right|bottom"
+                android:layout_gravity="right"
+                android:textColor="@color/colorGrey"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portions of Price"
+            android:textSize="16sp"
+            android:id="@+id/portionsHeader"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:id="@+id/portionText"
+                android:hint="Portions"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/menu_edittext_border"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="For"
+                android:id="@+id/forSubText"
+                android:textSize="14sp"
+                android:gravity="bottom|center"
+                android:textColor="@color/colorBlack"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:background="@drawable/menu_edittext_border">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:id="@+id/portionpriceET"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@android:color/transparent"
+                    android:hint="Price"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="0.1"
+                    android:id="@+id/portionPriceSubText"
+                    android:layout_gravity="right"
+                    android:gravity="right|bottom"
+                    android:textColor="@color/colorGrey"
+                    android:text="\u20A8"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Food Pic"
+            android:textSize="16sp"
+            android:id="@+id/uploadFoodPicHeader"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/upload"
+                android:hint="Upload a video/pdf of this receipe"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:layout_weight="0.9"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorBlack"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="right|bottom"
+                android:scaleType="fitCenter"
+                android:layout_gravity="right"
+                android:src="@drawable/attach_icon"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Next"
+                android:textSize="18sp"
+                android:id="@+id/nextBtn"
+                android:background="@drawable/chef_add_buttom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

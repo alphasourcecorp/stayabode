@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:background="@color/colorWhite"
+    app:contentPaddingLeft="10dp"
+    android:id="@+id/cardReferralRootLayout"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingTop="8dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/referredNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="UD342D - Referred +918939"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:text="12 Aug 2020"
+            android:textColor="#131212"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pointsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_below="@+id/referredNumber"
+            android:layout_alignParentLeft="true"
+            android:text="50 points"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#848484"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pointsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/pointsValue"
+            android:layout_alignTop="@+id/pointsValue"
+            android:text="12 July 2020 . 10:00 AM"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#848484"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/usedStatusText"
+            android:layout_toLeftOf="@+id/availableStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text=""
+            android:layout_below="@+id/pointsValue"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/availableStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text=""
+            android:layout_alignTop="@+id/usedStatusText"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/usedStatusText"
+            android:background="@color/colorViewLine"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

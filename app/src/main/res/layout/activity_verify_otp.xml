@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/topHeaderImage">
+
+            <ImageView
+                android:layout_width="270dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/topLogo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foodyhive_logo"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/platform"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="21sp"
+            android:id="@+id/subHeader"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/topHeaderImage"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/cardView"
+            android:background="@color/colorLoginCardBackground"
+            app:cardBackgroundColor="@color/colorLoginCardBackground"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layout_constraintTop_toBottomOf="@+id/subHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLoginCardBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:gravity="center"
+                    android:id="@+id/loginHeader"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorBlack"/>
+
+
+
+
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:hint="@string/otp"
+                                    android:layout_marginTop="40dp"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/inputTextLayout"
+                                    android:textSize="18sp"
+                                    android:background="@drawable/edittext_border"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="03:00"
+                        android:layout_weight="1"
+                        android:id="@+id/timer"
+                        android:textSize="14sp"
+                        android:gravity="left"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Resend OTP"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:id="@+id/resendOTP"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"/>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/sign_in"
+                    android:id="@+id/proceedBtn"
+                    android:textSize="21sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_background_border"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/logoImageLayout">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:id="@+id/imageview"-->
+<!--            android:src="@drawable/foodibee_logo"-->
+<!--            android:scaleType="fitCenter"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/waiting_msg"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@+id/logoImageLayout"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/enter_sms_code_header"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/label_OTP"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="25dp"-->
+<!--        android:layout_below="@+id/waiting_msg"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:padding="2dp"-->
+<!--        android:text="@string/enter_sms_code_sub_header"/>-->
+
+
+<!--&lt;!&ndash;    <com.alimuzaffar.lib.pin.PinEntryEditText&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/InputOTP"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@+id/waiting_msg"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginRight="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginLeft="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:cursorVisible="false"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:digits="0123456789"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:inputType="number"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:maxLength="4"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@color/colorAccent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColorHint="#ffffff"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textIsSelectable="false"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="20sp" />&ndash;&gt;-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/timer"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:layout_below="@+id/label_OTP"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:padding="5dp"-->
+<!--        />-->
+
+
+
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@+id/timer"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/proceedBtn">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="70dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="150dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:scaleType="fitCenter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/login_btn_icon"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:id="@+id/inputTextLayout"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1"-->
+<!--            android:id="@+id/otpInput"-->
+<!--            android:background="@drawable/edittext_border"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/mobileNumberInput"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="OTP"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:textColor="@android:color/black" />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:id="@+id/proceedBtn"-->
+<!--            android:text="@string/sign_in"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/otpInput"-->
+<!--            android:background="@drawable/button_background_border" />-->
+
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+<!--</RelativeLayout>-->

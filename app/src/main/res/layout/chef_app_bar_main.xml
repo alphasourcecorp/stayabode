@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:id="@+id/appBar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorSideBarTop"
+                android:elevation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:id="@+id/customIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/backIcon"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="left|center"
+                        android:tint="@color/colorWhite"
+                        android:visibility="gone"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_keyboard_arrow_left_black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/foodi_logo_left_image"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/pin"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/placeName"
+                        android:layout_width="180px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right|center">
+
+
+                    <Switch
+                        android:id="@+id/availableSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:maxHeight="16dp"
+                        android:switchMinWidth="26dp"
+                        android:text="Accept\nOrders"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+
+                    <Switch
+                        android:id="@+id/consumerSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:switchMinWidth="26dp"
+                        android:maxHeight="16dp"
+                        android:text="Consumer"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:textSize="10sp"
+                        android:textOff="OFF"
+                        android:textOn="ON"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right|center">
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textSize="12sp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="@color/colorWhite" />
+
+
+                        <ImageView
+                            android:id="@+id/cartIcon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorWhite"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="-15dp"
+                            android:src="@drawable/cart" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/searchLayout"
+                android:background="@color/colorSideBarTop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/search_rounded_border">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/search_icon"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorWhite"
+                        android:layout_marginLeft="20dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:paddingLeft="20dp"
+                       />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_rounded_border"
+                    android:weightSum="1"
+                    android:layout_below="@+id/pagetitle"
+                    android:id="@+id/dashBoardSearch"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/pagetitle"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/search_icon"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <Spinner
+                        android:id="@+id/searchSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:layout_gravity="right|center"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:id="@+id/arrowImage"
+                            android:layout_gravity="center"
+                            android:background="@color/colorChefSearch">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorWhite"
+                                android:src="@drawable/arrow_down"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <include layout="@layout/chef_content_main" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

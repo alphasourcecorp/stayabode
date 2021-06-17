@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/pagetitle">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/tools"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_below="@+id/pagetitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                app:cardBackgroundColor="@color/colorLoginCardBackground"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Location "
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/locationHeader"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_profile_border"
+                                android:layout_marginTop="25dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:id="@+id/locationEditText"
+                                        android:textColor="@android:color/black"
+                                        android:inputType="text"
+                                        android:layout_weight="0.9"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="18sp"
+                                        android:hint="Bangalore"
+                                        android:textColorHint="@color/colorBlack"
+                                        android:background="@android:color/transparent"/>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:tint="@color/colorGrey"
+                                            android:src="@drawable/location_icon"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="               "
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="25dp"
+                                android:background="@color/colorWhite"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="17sp" />
+
+
+
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Choose Language "
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/locationHeader"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="12sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_profile_border"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.9"
+                                    android:padding="5dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <EditText
+                                            android:layout_width="0dp"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/locationEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:layout_weight="0.9"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:hint="Bangalore"
+                                            android:textColorHint="@color/colorBlack"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="65dp"
+                                    android:background="@color/colorGreen"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.1">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:tint="@color/colorWhite"
+                                        android:src="@drawable/arrow_down"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="                          "
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="25dp"
+                                android:background="@color/colorWhite"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="17sp" />
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Update"
+                        android:paddingLeft="15dp"
+                        android:text="Update"
+                        android:background="@color/colorGreen"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="false"
+                        android:textSize="21sp"
+                        android:paddingRight="15dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_alignParentBottom="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+<!--        </RelativeLayout>-->
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+
+</RelativeLayout>

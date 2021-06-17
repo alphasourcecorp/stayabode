@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGreyCardBG"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef Name"
+            android:textSize="17sp"
+            android:id="@+id/chefName"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OrderId"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textSize="17sp"
+                    android:id="@+id/orderId"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track"
+                android:layout_weight="0.8"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:id="@+id/trackOrder"
+                android:textColor="@color/colorGreen"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPaddingLeft="15dp"
+    app:contentPaddingTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/optionLayout"-->
+<!--            android:layout_width="2dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginRight="24dp"-->
+<!--            android:layout_below="@+id/recyclerVIew"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="visible"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <View-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:background="#70707045" />-->
+
+<!--            <View-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:background="#70707045" />-->
+
+<!--            <View-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:background="#70707045" />-->
+
+<!--        </LinearLayout>-->
+        <View
+            android:id="@+id/viewOne"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="19dp"
+            android:background="@color/colorGrey"
+            android:visibility="gone"
+            android:layout_below="@id/recyclerView"/>
+
+        <TextView
+            android:id="@+id/deliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Delivered 5 Jun 20202"
+            android:textColor="#707070"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            app:layout_constraintLeft_toRightOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/foodName"
+            android:layout_below="@+id/viewOne"/>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="19dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintLeft_toLeftOf="@+id/deliveryDate"
+            app:layout_constraintRight_toLeftOf="@+id/optionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/deliveryDate"
+            android:layout_below="@id/deliveryDate"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chefImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user_profile_image"
+            android:layout_below="@+id/view"
+            app:layout_constraintLeft_toLeftOf="@+id/deliveryDate"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/chefName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="Sachin Singh "
+            android:textColor="#707070"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/chefImage"
+            android:layout_toRightOf="@+id/chefImage"
+            android:layout_alignBottom="@+id/chefImage"
+            android:layout_below="@+id/deliveryDate"/>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="19dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="gone"
+            android:layout_below="@+id/chefName"
+            app:layout_constraintTop_toBottomOf="@+id/chefName" />
+
+        <LinearLayout
+            android:id="@+id/openOrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/secondView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/viewStatusLayout"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="17dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/arrow_left"
+                    android:backgroundTint="#78797B"
+                    android:rotation="180"
+                    android:gravity="center"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/viewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_weight="0.5"
+                    android:text="View Status"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:id="@+id/orderInfoLayout"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/consumer_info"
+                    android:backgroundTint="#78797B"
+                    android:rotation="180" />
+
+                <TextView
+                    android:id="@+id/orderInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Order Info"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherOrdersLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/openOrderLayout"
+            app:layout_constraintTop_toBottomOf="@+id/openOrderLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/orderAgainLayout"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/cart"
+                    android:backgroundTint="#78797B"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/orderAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Order again"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/writeReviewLayout"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/reviewIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/consumer_star"
+                    android:backgroundTint="#78797B" />
+
+                <TextView
+                    android:id="@+id/writeReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Write a Review"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/orderInfoPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/consumer_info"
+                    android:backgroundTint="#78797B"
+                    android:rotation="180"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/orderInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Order Info"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

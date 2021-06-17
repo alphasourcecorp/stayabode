@@ -1,0 +1,3 @@
+include ':volley'
+rootProject.name='stayabode.foodyHive'
+include ':app', ':ccp', ':calendar', ':MPChartLib',':library'

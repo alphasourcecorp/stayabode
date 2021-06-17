@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/more_menu_report"
+        app:showAsAction="always"
+        android:icon="@drawable/reports"
+        android:title="@string/reports" />
+
+    <item
+        android:id="@+id/more_menu_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/more_menu_myprofile"
+        app:showAsAction="always"
+        android:icon="@drawable/user_icon"
+        android:title="@string/my_profile" />
+
+    <item
+        android:id="@+id/more_menu_calender"
+        app:showAsAction="always"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/settings" />
+
+
+    <item
+        android:id="@+id/more_menu_logout"
+        app:showAsAction="always"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/logout" />
+    <item
+        android:id="@+id/more_menu_orderfood"
+        app:showAsAction="always"
+        android:icon="@drawable/order_food"
+        android:title="@string/orders" />
+</menu>

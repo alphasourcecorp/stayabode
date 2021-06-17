@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:theme="@style/ToolBarFont"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="Become a Chef"
+        tools:targetApi="lollipop" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="20dp">
+
+<!--            <TextView-->
+<!--                android:id="@+id/areaHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Name"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/nameText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint=""-->
+<!--                    android:maxLines="1"-->
+<!--                    android:inputType="text"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Name "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/nameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint=""
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:importantForAutofill="no"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="         "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/areaHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Phone"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/phoneNumber"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint=""-->
+<!--                    android:maxLines="1"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="10"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Phone Number       "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint=""
+                        android:maxLines="1"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="                   "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/email"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Email"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/emailText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint=""-->
+<!--                    android:maxLines="1"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:inputType="text"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Email "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/emailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint=""
+                        android:maxLines="1"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="         "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/description"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Description"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <EditText
+                    android:id="@+id/descriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/et_border_form"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:hint="Enter Description"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#112132"
+                    android:importantForAutofill="no"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/joinWithUsButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/commentCard"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/lets_go_border_rounded"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Join with us"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

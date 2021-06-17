@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/pagetitle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="10dp"
+                    android:id="@+id/personalHeaderLayout"
+                    android:background="@color/colorGreyLight">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Details"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/editProfile"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="0.9"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="v"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="25dp"
+                        android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personalRootLayout"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        xmlns:app="http://schemas.android.com/tools"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Personal Details*"
+                                android:textSize="16sp"
+                                android:id="@+id/changeProfilePicHeader"
+                                android:layout_marginTop="25dp"
+                                android:textColor="@color/colorBlack"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/profileImageView"
+                                    android:src="@drawable/customer_user_profile_left_menu"/>
+
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="-40dp"
+                                    android:src="@drawable/plus_icon"
+                                    android:tint="@color/colorGreen"/>
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Full Name "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/fullNameHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/nameEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:importantForAutofill="no"
+                                            android:textSize="18sp"
+                                            android:hint="Name*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="             "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Location "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/locationHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <EditText
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:id="@+id/locationEditText"
+                                                android:textColor="@android:color/black"
+                                                android:inputType="text"
+                                                android:layout_weight="0.9"
+                                                android:paddingLeft="10dp"
+                                                android:textSize="18sp"
+                                                android:importantForAutofill="no"
+                                                android:hint="Location*"
+                                                android:textColorHint="@color/colorGrey"
+                                                android:background="@android:color/transparent"/>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.1"
+                                                android:gravity="center"
+                                                android:layout_gravity="center"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:tint="@color/colorGrey"
+                                                    android:src="@drawable/location_icon"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="           "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/edittext_border"
+                                    android:weightSum="1"
+                                    android:layout_below="@+id/pagetitle"
+                                    android:id="@+id/dashBoardSearch"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    app:layout_constraintTop_toBottomOf="@+id/pagetitle"
+                                    android:gravity="center">
+
+
+
+
+                                    <Spinner
+                                        android:id="@+id/searchSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.8"
+                                        android:gravity="center|left"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="18sp"
+                                        android:focusable="false"
+                                        android:clickable="false"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="center"
+                                        android:paddingLeft="15dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/spinnerDropDownlayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.2"
+                                        android:layout_gravity="right|center"
+                                        android:gravity="right">
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:gravity="center"
+                                            android:id="@+id/arrowImage"
+                                            android:layout_gravity="center"
+                                            android:background="@color/colorGreen">
+
+                                            <ImageView
+                                                android:layout_width="35dp"
+                                                android:layout_height="35dp"
+                                                android:layout_gravity="center"
+                                                android:tint="@color/colorWhite"
+                                                android:src="@drawable/arrow_down"/>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="DOB "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/dobHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <EditText
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:id="@+id/dobEditText"
+                                                android:textColor="@android:color/black"
+                                                android:inputType="text"
+                                                android:layout_weight="0.9"
+                                                android:paddingLeft="10dp"
+                                                android:focusable="false"
+                                                android:textSize="18sp"
+                                                android:hint="DD/MM/YYYY*"
+                                                android:textColorHint="@color/colorGrey"
+                                                android:background="@android:color/transparent"/>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.1"
+                                                android:gravity="center"
+                                                android:layout_gravity="center"
+                                                android:id="@+id/dobIcon"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+
+                                                    android:src="@drawable/calendar"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="      "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Bio "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/fullNameHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="100dp"
+                                            android:id="@+id/bioEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:hint="Bio*"
+                                            android:importantForAutofill="no"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="     "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Address "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/addressoneEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:hint="Address Line 1*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="           "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Address "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader2"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/addresstwoEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:hint="Address Line 2"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:importantForAutofill="no"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="           "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Address "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader3"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/addressthreeEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:hint="Address Line 3"
+                                            android:textColorHint="@color/colorBlack"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="               "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Pincode "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/pinCodeHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/pinCodeEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:maxLength="6"
+                                            android:hint="Pincode*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="          "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="State "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/stateHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/stateEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:focusable="false"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:textColorHint="@color/colorBlack"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="       "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Country "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/countryHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/countryEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:focusable="false"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:textColorHint="@color/colorBlack"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="          "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/phoneHeader"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Phone "
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/phoneEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="number"
+                                            android:focusable="true"
+                                            android:paddingLeft="10dp"
+                                            android:maxLength="10"
+                                            android:textSize="18sp"
+                                            android:hint="Phone*"
+                                            android:importantForAutofill="no"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="        "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Email "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/emailHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/emailEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="textEmailAddress"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:focusable="false"
+                                            android:importantForAutofill="no"
+                                            android:hint="Email*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="       "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Accolades"
+                                    android:textSize="16sp"
+                                    android:id="@+id/changeProfilePicHeader"
+                                    android:layout_marginTop="25dp"
+                                    android:textColor="@color/colorBlack"/>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Title "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/emailHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/accoladesitleEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="textEmailAddress"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:focusable="true"
+                                            android:importantForAutofill="no"
+                                            android:hint="Title"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="       "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Description "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/emailHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/accoladesdescriptionEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="textEmailAddress"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:focusable="true"
+                                            android:importantForAutofill="no"
+                                            android:hint="Description"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="       "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/addBtn"
+                                    android:background="@color/colorGreen"
+                                    android:layout_marginTop="20dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="Add Accolades"/>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/accoladesrecyclerView"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:weightSum="1"
+                    android:id="@+id/professionalHeaderLayout"
+                    android:background="@color/colorGreyLight">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Professional Details"
+                        android:textSize="18sp"
+                        android:id="@+id/changeLanguage"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="0.9"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="v"
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorGreen"
+                        android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/professionalRootLayout"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        xmlns:app="http://schemas.android.com/tools"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:orientation="vertical">
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="GST No "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/fullNameHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/gstEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:importantForAutofill="no"
+                                            android:textSize="18sp"
+                                            android:hint="GST"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="          "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="PAN No "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/locationHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:id="@+id/panEditText"
+                                                android:textColor="@android:color/black"
+                                                android:inputType="text"
+                                                android:layout_weight="1"
+                                                android:paddingLeft="10dp"
+                                                android:textSize="18sp"
+                                                android:hint="PAN"
+                                                android:importantForAutofill="no"
+                                                android:textColorHint="@color/colorGrey"
+                                                android:background="@android:color/transparent"/>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.1"
+                                                android:gravity="center"
+                                                android:visibility="gone"
+                                                android:layout_gravity="center"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:tint="@color/colorGrey"
+                                                    android:src="@drawable/location_icon"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="           "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="FSSAI No "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/fssaiEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:hint="FSSAI*"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="             "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Working Time "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader2"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/workingTimeEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:hint="Working Time*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="                  "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Time of the Day "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/addressHeader3"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/timeOfDayEditText"
+                                            android:textColor="@android:color/black"
+                                            android:inputType="text"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="18sp"
+                                            android:importantForAutofill="no"
+                                            android:hint="Time of the day*"
+                                            android:textColorHint="@color/colorGrey"
+                                            android:background="@android:color/transparent"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="                    "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Start Date "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/dobHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <EditText
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:id="@+id/startDateEditText"
+                                                android:textColor="@android:color/black"
+                                                android:inputType="text"
+                                                android:layout_weight="0.9"
+                                                android:paddingLeft="10dp"
+                                                android:focusable="false"
+                                                android:textSize="18sp"
+                                                android:hint="DD/MM/YYYY*"
+                                                android:textColorHint="@color/colorGrey"
+                                                android:background="@android:color/transparent"/>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.1"
+                                                android:gravity="center"
+                                                android:id="@+id/startDateIcon"
+                                                android:layout_gravity="center"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+
+                                                    android:src="@drawable/calendar"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="             "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="Renewal Date "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/dobHeader"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_profile_border"
+                                        android:layout_marginTop="25dp"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <EditText
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:id="@+id/renewalDateEditText"
+                                                android:textColor="@android:color/black"
+                                                android:inputType="text"
+                                                android:layout_weight="0.9"
+                                                android:paddingLeft="10dp"
+                                                android:focusable="false"
+                                                android:textSize="18sp"
+                                                android:hint="DD/MM/YYYY*"
+                                                android:textColorHint="@color/colorGrey"
+                                                android:background="@android:color/transparent"/>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.1"
+                                                android:gravity="center"
+                                                android:id="@+id/endDateIcon"
+                                                android:layout_gravity="center"
+                                                android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+
+                                                    android:src="@drawable/calendar"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="                  "
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="25dp"
+                                        android:background="@color/colorWhite"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="17sp" />
+
+
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Days Available"
+                                android:layout_below="@+id/professionalHeaderLayout"
+                                android:id="@+id/dayAvailableHeader"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorBlack"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/daysRecyclerView"
+                                android:layout_below="@+id/dayAvailableHeader"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"/>
+
+
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Update"
+                                android:paddingLeft="15dp"
+                                android:text="Update"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/colorGreen"
+                                android:textColor="@color/colorWhite"
+                                android:textAllCaps="false"
+                                android:textSize="21sp"
+                                android:visibility="visible"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="30dp"
+                                android:layout_alignParentBottom="true"/>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+ </RelativeLayout>

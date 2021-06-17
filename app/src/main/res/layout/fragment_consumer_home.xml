@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- our tablayout to display tabs  -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:textSize="15sp"
+        android:textColor="#8B98A6"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:visibility="gone"
+        app:tabSelectedTextColor="#F7B917"
+        app:tabTextColor="#8B98A6"
+        app:tabIndicatorColor="#F7B917"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- View pager to swipe views -->
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="fill_parent"/>-->
+
+    <stayabode.foodyHive.utils.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

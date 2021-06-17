@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:name="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/customer_home_left_menu"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_my_orders"
+        android:icon="@drawable/customer_orders_left_menu"
+        android:title="Your Orders"
+        app:actionLayout="@layout/consumer_left_menu_orders_count"/>
+
+    <item
+        android:id="@+id/navigation_saved"
+        android:icon="@drawable/customer_favourite_left_menu"
+        android:title="Saved"
+        app:actionLayout="@layout/consumer_left_menu_orders_count"/>
+
+    <item
+        android:id="@+id/navigation_subscription"
+        android:icon="@drawable/customer_subscription_menu"
+        android:title="Your Subscriptions"
+        app:actionLayout="@layout/consumer_left_menu_orders_count"/>
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/customer_events_menu"
+        android:title="Your Events" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/customer_notification_left_menu_image"
+        android:title="Notifications"
+        app:actionLayout="@layout/consumer_left_menu_orders_count"/>
+
+    <item
+        android:id="@+id/navigation_getHelp"
+        android:icon="@drawable/customer_get_help_menu"
+        android:title="Get Help" />
+
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/customer_about_menu"
+        android:title="About" />
+
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/customer_logout_menu"
+        android:title="Log out"/>
+
+
+
+    <!--<item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/reports"
+        android:title="@string/reports" />-->
+
+</menu>

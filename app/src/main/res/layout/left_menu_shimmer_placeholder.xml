@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/mainLayout"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/icon"
+            android:background="@drawable/skeleton"
+            android:layout_gravity="left"
+            android:layout_weight="0.1" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:text="Quality Management"
+            android:layout_weight="0.8"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/skeleton"
+            android:id="@+id/name"
+            android:layout_marginLeft="15dp"
+            android:textSize="21sp"/>
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="0.1"
+            android:id="@+id/arrowImage"
+            android:layout_marginLeft="15dp"
+            android:tint="@color/colorWhite"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/skeleton"
+            android:layout_gravity="right|center" />
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:id="@+id/icon"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:background="@drawable/skeleton"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    <View-->
+<!--        android:id="@+id/topText"-->
+<!--        android:layout_width="200dp"-->
+<!--        app:layout_constraintTop_toTopOf="@id/icon"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icon"-->
+<!--        android:layout_height="15dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:background="@drawable/skeleton"/>-->
+
+<!--    <View-->
+<!--        android:id="@+id/bottomText"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="15dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/topText"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icon"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:background="@drawable/skeleton"/>-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@drawable/skeleton"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/icon"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

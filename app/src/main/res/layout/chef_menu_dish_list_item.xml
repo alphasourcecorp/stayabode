@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:id="@+id/relativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorBlack"
+        android:alpha="0.4"
+        android:visibility="gone"
+        android:id="@+id/viewNotApproved">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/masala_dosa_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Masala Dosa"
+                    android:layout_gravity="top"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right|top">
+
+
+                    <Switch
+                        android:id="@+id/availableSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:checked="true"
+                        android:maxHeight="16dp"
+                        android:switchMinWidth="26dp"
+                        android:text="Order"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:theme="@style/SwitchThemeChef"
+                        android:visibility="visible"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_alignParentLeft="true"
+                    android:text="A shortDescriptiont" />
+
+                <TextView
+                    android:id="@+id/actualPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:visibility="visible"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/itemDescription"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_toRightOf="@+id/actualPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹40"
+                    android:layout_below="@+id/itemDescription"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/colorConsumerPrimary"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:text="(1000)"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="right|center"
+                        android:gravity="end"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/timeleft" />
+
+                    <TextView
+                        android:id="@+id/mins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 - 30 mins"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorViewLine"
+        android:layout_below="@+id/container"/>
+
+    <TextView
+        android:id="@+id/discountPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text=""
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/shape_circle"
+        android:layout_below="@+id/firstLayout"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+</RelativeLayout>

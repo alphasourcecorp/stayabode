@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:targetApi="lollipop"
+        app:title="Saved Items"
+        android:visibility="gone"
+        app:titleTextAppearance="@style/ToolBarFont"
+        app:titleTextColor="@color/colorConsumerNotifiactionText">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        app:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search Favourite items"
+            android:background="@null"
+            android:maxLines="1"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:textSize="14sp"
+
+            android:drawableRight="@drawable/search_icon_consumer"
+            android:paddingHorizontal="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView" />
+
+
+</LinearLayout>

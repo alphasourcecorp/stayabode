@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please turn on Accept Orders switch"
+            android:textSize="21sp"
+            android:id="@+id/onSwitchHeader"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/order_accept_icon"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A5A0A0"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/flipBtnHeader"
+            android:text="Flip the Accept Orders switchto start accepting\nnew orders"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

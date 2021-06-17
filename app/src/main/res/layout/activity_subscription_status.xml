@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+<!--    <include-->
+<!--        layout="@layout/toolbar_layout"-->
+<!--        android:id="@+id/toolbarlayout"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription Status"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pagetitle"
+        card_view:layout_constraintTop_toBottomOf="@+id/pagetitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        card_view:cardUseCompatPadding="true"
+                        android:layout_marginTop="20dp"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|top">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Corporate"
+                                android:textSize="21sp"
+                                android:id="@+id/corporateHeader"
+                                android:gravity="top|center"
+                                android:layout_marginTop="20dp"
+                                android:layout_gravity="top|center"
+                                android:textColor="@color/colorBlack"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="45"
+                                android:textSize="28sp"
+                                android:gravity="center"
+                                android:id="@+id/corporateCount"
+                                android:layout_marginTop="20dp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        card_view:cardUseCompatPadding="true"
+                        android:layout_marginTop="20dp"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|top">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Individual"
+                                android:textSize="21sp"
+                                android:id="@+id/individualHeader"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center|top"
+                                android:layout_gravity="top|center"
+                                android:textColor="@color/colorBlack"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="28sp"
+                                android:id="@+id/individualCount"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    android:layout_marginTop="20dp"
+                    card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                    app:cardBackgroundColor="@color/colorLoginCardBackground"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLoginCardBackground"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textSize="18sp"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/weekTextHeader"
+                            android:textColor="@color/colorBlack"/>
+
+                        <noman.weekcalendar.WeekCalendar
+                            android:id="@+id/weekCalendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="20dp"
+                            app:numOfPages="150"
+                            card_view:daysTextSize="14sp"
+                            card_view:weekTextSize="14sp"
+                            card_view:dayNameLength="threeLetters"
+                            card_view:daysTextColor="@color/colorBlack"
+                            card_view:weekBackgroundColor="@color/colorGreen"
+                            card_view:daysBackgroundColor="@color/colorWhite" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_border">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:src="@drawable/search_icon"/>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Search Orders"
+                                    android:singleLine="true"
+                                    android:imeOptions="actionDone"
+                                    android:background="@android:color/transparent"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/recyclerView"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginRight="10dp"/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

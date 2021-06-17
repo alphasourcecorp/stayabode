@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+<!--    <include-->
+<!--        layout="@layout/toolbar_layout"-->
+<!--        android:id="@+id/toolbarlayout"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revenue Sharing"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/cardView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/pagetitle"
+        android:background="@color/colorLoginCardBackground"
+        app:cardBackgroundColor="@color/colorLoginCardBackground"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Pricing Model"
+                android:textSize="21sp"
+                android:id="@+id/selectPricingHeader"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_border"
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <Spinner
+                    android:id="@+id/pricingType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:entries="@array/pricing_list" />
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="right"
+                    android:gravity="right">
+                    
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@color/colorGreen">
+                        
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorWhite"
+                            android:src="@drawable/arrow_down"/>
+                        
+                    </LinearLayout>
+                    
+                </LinearLayout>
+
+               
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Platform"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:id="@+id/platform"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="16.5%"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:id="@+id/platformValue"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Franchise"
+                            android:id="@+id/franchise"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="6.0%"
+                            android:layout_weight="0.5"
+                            android:id="@+id/franchiseValue"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery"
+                            android:id="@+id/delivery"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="7.5%"
+                            android:layout_weight="0.5"
+                            android:id="@+id/deliveryValue"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Gateway"
+                            android:layout_weight="0.5"
+                            android:id="@+id/paymentGateway"
+                            android:gravity="left"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="2.0%"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="right"
+                            android:id="@+id/paymentGatewayValue"
+                            android:gravity="right"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Chef"
+                            android:id="@+id/chef"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="100.0%"
+                            android:layout_weight="0.5"
+                            android:id="@+id/chefValue"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tax/GST"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:id="@+id/taxgst"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="18.0%"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:id="@+id/taxgstValue"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:layout_weight="0.5"
+                            android:id="@+id/total"
+                            android:gravity="left"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="150.0%"
+                            android:layout_weight="0.5"
+                            android:id="@+id/totalValue"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

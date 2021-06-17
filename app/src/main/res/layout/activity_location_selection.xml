@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/location_selection_bg_image"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gradient_location_image_bg" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:alpha="0.6"
+            android:background="@color/colorBlack"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/foodi_logo_left_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foody"
+                    android:gravity="center"
+                    android:id="@+id/logoLeftText"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hive"
+                    android:gravity="center"
+                    android:id="@+id/logoRightText"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:textColor="#F7B917"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Home made goodness"
+                android:id="@+id/logoBottomText"
+                android:textSize="8sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F7B917"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/mainText"
+                android:text="Freshly Prepared Food"
+                android:textSize="23sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="from homes in your neighbourhood"
+                android:textSize="23sp"
+                android:id="@+id/mainSubText"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F7B917"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="We are now available in Bangalore"
+                android:textSize="14sp"
+                android:id="@+id/subText"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Select Location"
+                android:textSize="14sp"
+                android:id="@+id/subOneText"
+                android:layout_marginTop="5dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/recyclerView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/searchLayout"
+                android:background="@drawable/rounded_border_location_item">
+
+                <AutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.9"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    android:id="@+id/searchText"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@android:color/transparent"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:id="@+id/getLocation"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/select_location"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:layout_below="@+id/searchLayout">
+
+                <LinearLayout
+                    android:id="@+id/letsGoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lets_go_border_rounded">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Let's Go"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:id="@+id/letsgotext"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="center|right"
+                        android:tint="@color/colorBlack"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skip_arrow_image"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:paddingBottom="15dp"
+                    android:layout_below="@+id/letsGoLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:id="@+id/howworksText"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="- How it works -"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/location_home_icons"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="36dp"
+                            android:scaleType="fitCenter"
+                            android:tint="#F7B917"
+                            android:src="@drawable/fb_icon"
+                            android:layout_marginRight="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="36dp"
+                            android:scaleType="fitCenter"
+                            android:tint="#F7B917"
+                            android:src="@drawable/fb_icon"
+                            android:layout_marginRight="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/next_arrow_image"
+                            android:layout_marginRight="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="36dp"
+                            android:scaleType="fitCenter"
+                            android:tint="#F7B917"
+                            android:src="@drawable/fb_icon"
+                            android:layout_marginRight="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/next_arrow_image"
+                            android:layout_marginRight="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="36dp"
+                            android:scaleType="fitCenter"
+                            android:tint="#F7B917"
+                            android:src="@drawable/fb_icon"
+                            android:layout_marginRight="20dp"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left|center">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:id="@+id/pointOneText"
+                            android:text="1) Search your neighbourhood near by your location"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="left"
+                            android:id="@+id/pointTwoText"
+                            android:singleLine="true"
+                            android:text="2) Easily find meals that fit your diet and taste buds"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="5dp"
+                            android:singleLine="true"
+                            android:id="@+id/pointThreeText"
+                            android:text="3) Pay for the food by card/online"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/pointFourText"
+                            android:singleLine="true"
+                            android:text="4) Get your meal delivered your doorstep"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/places_list_rL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="2dp"
+                        android:id="@+id/recyclerCard"
+                        app:cardElevation="6dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewplace"
+                            android:scrollbars="vertical"
+                            android:background="@color/colorWhite"
+                            android:layout_below="@+id/searchBarView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    
+
+
+</RelativeLayout>

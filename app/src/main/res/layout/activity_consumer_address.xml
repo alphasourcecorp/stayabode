@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:theme="@style/ToolBarFont"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="Address"
+        tools:targetApi="lollipop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+<!--            <TextView-->
+<!--                android:id="@+id/emailHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Email"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/emailET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint="email"-->
+<!--                    android:inputType="none"-->
+<!--                    android:focusable="false"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Email "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint=""
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:importantForAutofill="no"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/nameHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Name"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/nameET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Name"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Name "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/areaHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Area"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/areaET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Area"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Area "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/areaET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/addressHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Address"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/addressET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Address"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Address "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/addressET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/countryHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Country"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/countryET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:focusable="false"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint="India"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:text="India"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Country "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/countryET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="India"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="India"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/stateHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="State"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/stateET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:focusable="false"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint="Karnataka"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:text="Karnataka"-->
+
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="State "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/stateET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Karnataka"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Karnataka"
+
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/cityHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="City"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/cityET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:drawableEnd="@drawable/delete_icon"-->
+<!--                    android:focusable="false"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint="Bangalore"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+
+<!--                    android:text="Bangalore"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textColorHint="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="City "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/cityET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/delete_icon"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Bangalore"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        android:text="Bangalore"
+                        android:textColor="#112132"
+                        android:textColorHint="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="         "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/pinCodeHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="PinCode"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/pinCodeET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:drawableEnd="@drawable/delete_icon"-->
+<!--                    android:fontFamily="@font/poppins_medium"-->
+<!--                    android:hint="PinCode"-->
+<!--                    android:maxLength="6"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:inputType="number"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="PinCode "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/pinCodeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/delete_icon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="           "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/mobileNumberHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Mobile Number"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/mobileNumberET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Mobile Number"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:maxLength="10"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Mobile Number "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/mobileNumberET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:importantForAutofill="no"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="                    "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/landLineHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:text="Landmark (Optional)"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/landLineET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Landmark"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:textColor="#112132"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Landmark "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/landLineET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#112132"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:text="               "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                tools:visibility="gone">
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/address_to_latlog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/checkout_border"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/framelayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone">
+
+        <stayabode.foodyHive.commonactivities.CustomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+
+                <!--<fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="650px" />-->
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="OR"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/getcurrent_location_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/checkout_border"
+                    android:text="Get Current Location"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/checkout_border"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <!-- <LinearLayout
+                         android:id="@+id/linearLayout"
+                         android:layout_width="match_parent"
+                         android:layout_height="250dp" >
+
+                         <com.google.android.gms.maps.MapView
+                             android:id="@+id/YOURMAPID"
+                             android:layout_width="fill_parent"
+                             android:layout_height="fill_parent" >
+                         </com.google.android.gms.maps.MapView>
+                     </LinearLayout>-->
+
+
+            </LinearLayout>
+        </stayabode.foodyHive.commonactivities.CustomScrollView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

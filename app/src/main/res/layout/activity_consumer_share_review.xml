@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorConsumerPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ToolBarFont"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="Share your Review" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+            <ImageView
+                android:id="@+id/foodImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="33dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/foodImage"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/foodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorConsumerFont"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodImage"
+                android:layout_centerHorizontal="true"
+                android:progressTint="#FFC107"
+                android:layout_marginTop="15dp"
+                android:numStars="5" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/publicNameText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/ratingBar"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="Choose your Public Name"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/nameCard"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_below="@+id/publicNameText"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="left|center"-->
+<!--                    android:gravity="left|center"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:text=""-->
+<!--                    android:hint="Your public name"-->
+<!--                    android:background="@null"-->
+<!--                    android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameCard"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/ratingBar"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Name "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left|center"
+                        android:gravity="left|center"
+                        android:paddingLeft="15dp"
+                        android:text=""
+                        android:hint=""
+                        android:background="@null"
+                        android:textColor="@color/colorConsumerNotifiactionText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="         "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/commentsText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/nameCard"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:text="Comments"-->
+<!--                android:textColor="@color/colorConsumerNotifiactionText"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/commentCard"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="110dp"-->
+<!--                android:layout_below="@+id/commentsText"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/comments"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@null"-->
+<!--                    android:paddingHorizontal="15dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:gravity="top"-->
+<!--                    android:hint="Tap to Write your comments.."-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/nameCard"
+                android:id="@+id/commentCard">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Comments "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/fullNameHeader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_border_form"
+                    android:layout_marginTop="28dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@null"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:gravity="top"
+                        android:hint="Tap to Write your comments.."
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="                   "
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="17sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/commentCard"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/lets_go_border_rounded"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!--<SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodName"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="5dp"
+        android:maxHeight="5dp"
+        android:thumb=""
+        android:layout_toRightOf="@+id/foodImage" />-->
+
+
+</RelativeLayout>

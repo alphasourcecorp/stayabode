@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+<!--    <include-->
+<!--        layout="@layout/toolbar_layout"-->
+<!--        android:id="@+id/toolbarlayout"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Gateway Detail"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_Bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pagetitle"
+        android:id="@+id/bodyLayout"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/pagetitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/profileImage"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/franchise_profile_image"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Gateway Name"
+                    android:gravity="center"
+                    android:id="@+id/paymentGatewayName"
+                    android:layout_marginTop="10dp"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorBlack"/>
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bangalore"
+                    android:gravity="center"
+                    android:id="@+id/city"
+                    android:layout_marginTop="5dp"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:gravity="center"
+                    android:id="@+id/status"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner_border"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quick Stats"
+                        android:id="@+id/quickStatsHeader"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:background="@drawable/chefs_background"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10%"
+                                android:id="@+id/transactionValue"
+                                android:textSize="23sp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Transaction\nFee"
+                                android:gravity="center"
+                                android:id="@+id/transactioneHeader"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="11sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/cloud_kitchen_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textSize="23sp"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:id="@+id/creditDayValue"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Days to\nCredit"
+                                android:gravity="center"
+                                android:id="@+id/creditDayHeader"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="11sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/max_weight_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="23sp"
+                                android:gravity="center"
+                                android:id="@+id/setupValue"
+                                android:layout_gravity="center"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Setup \nFee"
+                                android:gravity="center"
+                                android:id="@+id/setupHeader"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="11sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/cardView"
+                        android:background="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        app:layout_constraintTop_toBottomOf="@+id/header">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payment Gateway Details"
+                                android:textSize="18sp"
+                                android:id="@+id/paymentGatewayDetailHeader"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="15dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="30dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Start Date"
+                                        android:layout_weight="0.4"
+                                        android:textSize="18sp"
+                                        android:id="@+id/startDate"
+                                        android:textColor="@color/colorBlack"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="12 July 2020"
+                                        android:layout_weight="0.6"
+                                        android:id="@+id/startDateValue"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/colorBlack"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/mappedcardView"
+                        android:background="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        app:layout_constraintTop_toBottomOf="@+id/header">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Franchisees Mapped"
+                                    android:id="@+id/mappedFranchiseHeader"
+                                    android:layout_marginLeft="15dp"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18sp"/>
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/recyclerView"
+                                    android:layout_marginTop="15dp"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noInternetLayout"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <include
+            layout="@layout/no_internet"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

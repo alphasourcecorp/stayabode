@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:elevation="2dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Choose additional time"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:text="Add 5 Mins"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/fiveMinsButton"
+        android:textColor="@color/colorChefpopBlue"
+        android:background="@drawable/chef_extra_time_button"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:text="Add 10 Mins"
+        android:textColor="@color/colorChefpopBlue"
+        android:background="@drawable/chef_extra_time_button"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/tenMinsButton"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:text="Add 15 Mins"
+        android:textAllCaps="false"
+        android:textColor="@color/colorChefpopBlue"
+        android:id="@+id/fifteenMinsButton"
+        android:background="@drawable/chef_extra_time_button"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

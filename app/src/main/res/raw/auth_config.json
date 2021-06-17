@@ -1,0 +1,11 @@
+{
+  "client_id": "94861533-15b5-456e-b85e-91403546c9e2",
+  "redirect_uri": "com.onmicrosoft.foodyhiveprod.foodyhive://oauth/redirect",
+  "authorization_scope": "openid offline_access https://foodyhiveprod.onmicrosoft.com/api/user_impersonation",
+  "discovery_uri": "https://foodyhiveprod.b2clogin.com/foodyhiveprod.onmicrosoft.com/B2C_1A_SignUpOrSignInWithPhone/v2.0/.well-known/openid-configuration",
+  "authorization_endpoint_uri": "",
+  "token_endpoint_uri": "",
+  "registration_endpoint_uri": "",
+  "user_info_endpoint_uri": "",
+  "https_required": true
+}

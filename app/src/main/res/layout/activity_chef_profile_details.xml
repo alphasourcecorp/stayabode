@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+<!--    <include-->
+<!--        layout="@layout/toolbar_layout"-->
+<!--        android:id="@+id/toolbarlayout"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chef Status"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/back"
+        android:textColor="@color/colorBlack"/>
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_Bar"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/pagetitle"
+        android:id="@+id/bodyLayout"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/pagetitle">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/franchise_profile_image" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ethan Hunt"
+                    android:gravity="center"
+                    android:id="@+id/chefName"
+                    android:layout_marginTop="10dp"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bangalore"
+                    android:gravity="center"
+                    android:id="@+id/city"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ratingBar"
+                    style="@style/ImageRatingBar"
+                    android:layout_gravity="center"
+                    android:numStars="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accepting Orders"
+                        android:gravity="center"
+                        android:id="@+id/status"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"
+
+                         />
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/franchise_image_bg"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text=""
+                            android:id="@+id/notification"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_weight="1">
+
+                            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                android:layout_height="165dp"
+                                card_view:cardCornerRadius="3dp"
+                                card_view:cardElevation="3dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                card_view:cardUseCompatPadding="true"
+                                android:layout_marginTop="20dp"
+                                card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                                app:cardBackgroundColor="@color/colorLoginCardBackground"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center|top">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total Orders"
+                                        android:textSize="21sp"
+                                        android:id="@+id/totalOrdersHeader"
+                                        android:gravity="top|center"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_gravity="top|center"
+                                        android:textColor="@color/colorBlack"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="200"
+                                        android:textSize="28sp"
+                                        android:gravity="center"
+                                        android:id="@+id/ordersCount"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/colorBlack"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                android:layout_height="165dp"
+                                card_view:cardCornerRadius="3dp"
+                                card_view:cardElevation="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                card_view:cardUseCompatPadding="true"
+                                android:layout_marginTop="20dp"
+                                card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                                app:cardBackgroundColor="@color/colorLoginCardBackground"
+                                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center|top">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Subscriptions"
+                                        android:textSize="21sp"
+                                        android:id="@+id/subscriptionsHeader"
+                                        android:layout_marginTop="20dp"
+                                        android:gravity="center|top"
+                                        android:layout_gravity="top|center"
+                                        android:textColor="@color/colorBlack"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="45"
+                                        android:textSize="28sp"
+                                        android:id="@+id/subscriptionsCount"
+                                        android:layout_marginTop="20dp"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/colorBlack"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/cardView"
+                        android:background="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        app:layout_constraintTop_toBottomOf="@+id/header">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Menu"
+                                android:textSize="18sp"
+                                android:id="@+id/menuheader"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="15dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Items"
+                                            android:textSize="18sp"
+                                            android:layout_marginLeft="15dp"
+                                            android:id="@+id/itemHeader"
+                                            android:layout_weight="0.5"
+                                            android:gravity="left"
+                                            android:textColor="@color/colorBlack"/>
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Price"
+                                            android:id="@+id/priceHeader"
+                                            android:gravity="right"
+                                            android:layout_marginRight="15dp"
+                                            android:textSize="18sp"
+                                            android:layout_weight="0.5"
+                                            android:textColor="@color/colorBlack"/>
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/menuRecyclerView"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/cardView"
+                        android:background="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        app:layout_constraintTop_toBottomOf="@+id/header">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Promo Codes"
+                                android:textSize="18sp"
+                                android:id="@+id/promoCodesheader"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="15dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Promo Code"
+                                            android:textSize="18sp"
+                                            android:id="@+id/promoCodeTitle"
+                                            android:layout_weight="0.5"
+                                            android:gravity="left"
+                                            android:layout_marginLeft="15dp"
+                                            android:textColor="@color/colorBlack"/>
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Status"
+                                            android:id="@+id/promoCodeStatusHeader"
+                                            android:gravity="right"
+                                            android:textSize="18sp"
+                                            android:layout_marginRight="15dp"
+                                            android:layout_weight="0.5"
+                                            android:textColor="@color/colorBlack"/>
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/promoCodeRecyclerView"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/cardView"
+                        android:background="@color/colorLoginCardBackground"
+                        app:cardBackgroundColor="@color/colorLoginCardBackground"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardBackgroundColor="@color/colorLoginCardBackground"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Latest Customer Reviews"
+                                android:textSize="18sp"
+                                android:id="@+id/customerReviewheader"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="15dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/reviewsRecyclerView"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back_black"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/topViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrowBack"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <View
+            android:id="@+id/viewFirst"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:alpha="10"
+            android:background="@color/colorGreen" />
+
+        <View
+            android:id="@+id/viewSecond"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            android:background="@color/colorGreen" />
+
+
+        <View
+            android:id="@+id/viewThird"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            android:background="@color/colorGreen" />
+
+
+        <View
+            android:id="@+id/viewFourth"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            android:background="@color/colorGreen" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topViews">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:focusable="true"
+                android:text="Add Menu Item"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp" />
+
+            <!-- First Layout Code Starts -->
+            <RelativeLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dishDetailHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dish Details"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/dishName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="0.8"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:maxLength="100"
+                            android:hint="Name of the Dish"
+                            android:inputType="text"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/nameCountText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.2"
+                            android:fontFamily="@font/roboto_regular"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|bottom"
+                            android:text="0/100"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/shortDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="0.8"
+                            android:background="@android:color/transparent"
+                            android:hint="A short Description"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="100"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/descriptionCountText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.2"
+                            android:fontFamily="@font/roboto_regular"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|bottom"
+                            android:text="0/100"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/Weight"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:hint="Weight"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/weightSubText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:gravity="right|bottom"
+                            android:text="g"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/quantityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Quantity"
+                        android:maxLength="8"
+                        android:inputType="number"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Price"
+                        android:maxLength="8"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/preparationTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:hint="Preparation Time"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/preparationSubText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:gravity="right|bottom"
+                            android:text="mins"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/discountPercent"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:hint="Discount"
+                            android:maxLength="4"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/discountSubText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:gravity="right|bottom"
+                            android:text="%"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/portionsHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Portions of Price"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/portionText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/menu_edittext_border"
+                            android:hint="Quantity"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/forSubText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:gravity="bottom|center"
+                            android:text="For"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/menu_edittext_border"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:id="@+id/portionpriceET"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:background="@android:color/transparent"
+                                android:hint="Price"
+                                android:maxLength="8"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/portionPriceSubText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.1"
+                                android:gravity="right|bottom"
+                                android:text="₹"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/uploadFoodPicHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Upload Food Pic"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/uploadText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Upload a dish image."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/upload"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:gravity="right|bottom"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/attach_icon"
+                            android:textColor="@color/colorBlack" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/nextBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/chef_add_buttom"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!-- First Layout Code Ends -->
+
+
+            <!-- Second Layout Code Starts -->
+
+            <RelativeLayout
+                android:id="@+id/secondLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/categoryHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categoryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <TextView
+                        android:id="@+id/dishHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Type of Dish"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dishRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <TextView
+                        android:id="@+id/cuisineHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cuisine"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cuisineRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <TextView
+                        android:id="@+id/daysAvailableHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Days Available"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/daysRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp" />
+
+                    <TextView
+                        android:id="@+id/timeHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Time"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/startTimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/menu_edittext_border"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Start Time"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:text="to"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/endTimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/menu_edittext_border"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="End Time"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/promotedCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Promoted / Exclusive" />
+
+                    <Button
+                        android:id="@+id/nextBtntwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/chef_add_buttom"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!-- Second Layout Code Ends -->
+
+            <!-- Third Layout Code Starts -->
+
+            <RelativeLayout
+                android:id="@+id/thirdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ingredientsHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Details"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+
+                        <TextView
+                            android:id="@+id/ingredientsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Ingredients"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ingredientsTitle"
+                            android:background="@drawable/menu_edittext_border"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/ingredients"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|top"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.8"
+                                android:background="@android:color/transparent"
+                                android:gravity="left|top"
+                                android:hint=""
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/ingredientsMinLenghtText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.2"
+                                android:gravity="right|bottom"
+                                android:text="0/100"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/descriptionTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Description"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/descriptionTitle"
+                            android:background="@drawable/menu_edittext_border"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/dishdescription"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|top"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.8"
+                                android:background="@android:color/transparent"
+                                android:gravity="left|top"
+                                android:hint=""
+                                android:inputType="text"
+                                android:maxLength="300"
+                                android:maxLines="5"
+                                android:ellipsize="end"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/minLengthDishDescription"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.2"
+                                android:gravity="right|bottom"
+                                android:text="0/300"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/categoryHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tags"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/tagsRecyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/uploadReceipeHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Recipe Upload"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/receipeupload"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:hint="Upload a pdf of this recipe"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/attachPdf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:gravity="right|bottom"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/attach_icon"
+                            android:textColor="@color/colorBlack" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/nextBtnthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/chef_add_buttom"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- Third Layout Code Ends -->
+
+
+            <!-- Fourth Layout Code Starts -->
+
+            <RelativeLayout
+                android:id="@+id/fourthLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/proteinInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#f8b7bd"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Total value of Protein, Fat, Carbs, Fibre and Sugar must be equal to 100"
+                    android:textColor="@color/colorBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/proteinInfoText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/calories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Calories"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/protein"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Protein"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/fat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Fat"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/carbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Carbs"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/fibre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Fibre"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/sugar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/menu_edittext_border"
+                        android:hint="Sugar"
+                        android:maxLength="5"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="14sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp">
+
+                        <TextView
+                            android:id="@+id/allergicInfoHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Allergen Information"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/allergicInfoHeader"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/menu_edittext_border"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/allerginInfo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:layout_weight="0.8"
+                                android:background="@android:color/transparent"
+                                android:gravity="left|top"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:maxLength="200"
+                                android:maxLines="5"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/minLengthAllerginInfoText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.2"
+                                android:gravity="right|bottom"
+                                android:text=""
+                                android:textColor="@color/colorGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/addBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/chef_add_buttom"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- Fourth Layout Code Ends -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

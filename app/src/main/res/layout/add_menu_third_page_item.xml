@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdLayout">
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Details"
+            android:textSize="16sp"
+            android:id="@+id/ingredientsHeader"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ingredients"
+                android:hint="Ingredients"
+                android:maxLines="5"
+                android:maxLength="2000"
+                android:layout_weight="0.9"
+                android:layout_gravity="left|top"
+                android:gravity="left|top"
+                android:inputType="textCapSentences|textMultiLine"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="140"
+                android:textColor="@color/colorGrey"
+                android:textSize="14sp"
+                android:gravity="right|bottom"
+                android:id="@+id/ingredientsMinLenghtText"
+                android:layout_gravity="right"
+                android:layout_weight="0.1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/dishdescription"
+                android:hint="Description of the Dish"
+                android:maxLines="5"
+                android:maxLength="2000"
+                android:layout_weight="0.9"
+                android:layout_gravity="left|top"
+                android:gravity="left|top"
+                android:inputType="textCapSentences|textMultiLine"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="140"
+                android:textColor="@color/colorGrey"
+                android:textSize="14sp"
+                android:id="@+id/minLengthDishDescription"
+                android:gravity="right|bottom"
+                android:layout_gravity="right"
+                android:layout_weight="0.1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receipe Upload"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:id="@+id/uploadReceipeHeader"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:background="@drawable/menu_edittext_border">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/receipeupload"
+                android:hint="Upload a video/pdf of this receipe"
+                android:textSize="14sp"
+                android:layout_weight="0.9"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorBlack"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="right|bottom"
+                android:scaleType="fitCenter"
+                android:layout_gravity="right"
+                android:src="@drawable/attach_icon"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Next"
+                android:textSize="18sp"
+                android:background="@drawable/chef_add_buttom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                android:id="@+id/nextBtn"
+                android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

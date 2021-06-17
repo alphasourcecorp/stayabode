@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:id="@+id/pagetitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/toolbarlayout"
+        android:textColor="@color/colorBlack"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/searchIv"
+        android:src="@drawable/search_icon"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_border"
+        android:weightSum="1"
+        android:layout_below="@+id/pagetitle"
+        android:id="@+id/dashBoardSearch"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/pagetitle"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search_icon"
+                />
+
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:id="@+id/searchSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center|left"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="right|center"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/arrowImage"
+                android:layout_gravity="center"
+                android:background="@color/colorGreen">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/arrow_down"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_Bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/dashBoardSearch"
+        app:layout_constraintTop_toBottomOf="@+id/dashBoardSearch"
+        android:id="@+id/recyclerView"/>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:id="@+id/profileLayout"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/chef_profile_menu_border"
+        android:orientation="vertical">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/user_icon_consumer"
+            android:id="@+id/userProfileImage"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:id="@+id/location"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"/>
+
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"/>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/shimmerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+            <include layout="@layout/left_menu_shimmer_placeholder"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/recyclerView"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <FrameLayout
+            style="?attr/actionButtonStyle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clipToPadding="false"
+            android:layout_weight="0.1"
+            android:layout_gravity="left"
+            android:focusable="true">
+
+            <info.androidhive.fontawesome.FontTextView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                app:solid_icon="true"
+                android:textSize="25sp"
+                android:id="@+id/logoutFontAwesome"
+                android:text="@string/logoutIcon"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/notificationsbadge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/notification_count_round_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="3dp"
+                android:text="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_weight="0.8"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/logoutMenu"
+            android:layout_marginLeft="15dp"
+            android:textSize="21sp"/>
+
+        <info.androidhive.fontawesome.FontTextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.1"
+            app:solid_icon="true"
+            android:visibility="invisible"
+            android:textSize="25sp"
+            android:text="@string/afterExpandIcon"
+            android:tint="@color/colorBlack"
+            android:layout_gravity="right|center" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/toolBarLayout">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:tint="@color/colorBlack"
+            android:layout_weight="0.1"
+            android:src="@drawable/login_back_arrow_image"
+            android:id="@+id/backIcon"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Sort &amp; Filter"
+            android:textSize="20sp"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center"
+            android:textColor="#F7B917"/>
+
+        <TextView
+            android:id="@+id/resetText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Reset All"
+            android:textSize="18sp"
+            android:gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center"
+            android:textColor="#112132"/>
+
+
+    </LinearLayout>
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolBarLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/toprecyclerView"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomRecyclerView"
+            android:layout_above="@id/applyFilter"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/toprecyclerView"/>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TabLayoutSortAndFilter"
+        android:layout_below="@+id/toolBarLayout"
+        android:visibility="visible"
+        app:tabMode="scrollable"
+        app:tabPaddingStart="15dp"
+        app:tabPaddingEnd="15dp"
+        app:tabIndicatorColor="@color/colorConsumerPrimary"
+        app:tabSelectedTextColor="@color/colorConsumerPrimary"
+        app:tabTextColor="@color/colorConsumerFont" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/tabLayout"
+        android:layout_above="@+id/applyFilter"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/applyFilter"
+        android:background="#F7B917"
+        android:textAllCaps="false"
+        android:textColor="#112132"
+        android:text="Apply Filter"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/masala_dosa_image"
+            android:scaleType="centerCrop"
+            android:id="@+id/bannerImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Mutton Biriyani1+1 Offer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:id="@+id/name"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/lets_go_border_rounded"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

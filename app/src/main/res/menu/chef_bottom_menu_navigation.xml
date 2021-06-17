@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_my_dashboard"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/chef_orders_bottom_menu_icon"
+        android:title="@string/orders" />
+
+    <item
+        android:id="@+id/navigation_subscription"
+        android:icon="@drawable/subscription"
+        android:title="Subscriptions"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/chef_menu_bottom_menu_icon"
+        android:title="Menu" />
+
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/notification"
+        android:title="@string/notification">
+
+    </item>
+
+    <!--<item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/reports"
+        android:title="@string/reports" />-->
+
+</menu>

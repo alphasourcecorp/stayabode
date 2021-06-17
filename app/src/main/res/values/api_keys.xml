@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gMap_Api_Key_KA" templateMergeStrategy="preserve" translatable="false">AIzaSyBsug3VqBpKa4Xvo6zDaxcfzwGj0nU3B8E</string>
+    <string name="gMap_Api_Key_AS" templateMergeStrategy="preserve" translatable="false">AIzaSyAusYhvmfXc7IBCln8HuoDGY9ZnoZvdvuM</string>
+    <string name="gMap_Api_Key_SAT" templateMergeStrategy="preserve" translatable="false">AIzaSyBY5hlM8ioRbflHoZAIeCf1ceOXLYCDwik</string>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="#F8F8F8">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Order No 123"
+                android:layout_weight="0.8"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/orderID"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Accept Order in 3:00"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:id="@+id/acceptText"
+                android:textColor="@color/colorGreen"
+                android:layout_gravity="center|top"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/itemsRecyclerView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountLayout"
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/totalAmount"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="786"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:id="@+id/totalAmountValue"
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:text="Reject"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/rejectOrderBtn"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/chef_cancel_order_button"/>
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:text="Accept"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="0.5"
+                    android:id="@+id/acceptOrderBtn"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/chef_accept_order_button"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

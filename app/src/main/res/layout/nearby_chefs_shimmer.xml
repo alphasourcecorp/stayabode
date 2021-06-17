@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="167dp"
+    android:layout_height="215dp"
+    android:layout_marginRight="15dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/neighbourImage"
+            android:background="@drawable/skeleton"
+            android:src="@drawable/user_profile_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack"
+            android:alpha="0.4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:text="Jaspreet"
+                    android:id="@+id/name"
+                    android:textAllCaps="false"
+                    android:background="@drawable/skeleton"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"/>
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/skeleton"
+                    android:src="@drawable/skip_arrow_image"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:background="@drawable/skeleton"
+                    android:src="@drawable/location_icon"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="Kammanahalli,BLR"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/placeName"
+                    android:background="@drawable/skeleton"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

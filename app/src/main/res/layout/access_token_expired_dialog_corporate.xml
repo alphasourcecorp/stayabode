@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/closeBtn"
+            android:src="@drawable/close_icon"
+            android:visibility="gone"
+            android:tint="@color/colorBlack"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo2black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Your session has been expired "
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/buttonreset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="CANCEL"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_light"
+                android:background="@color/colorGreyText"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/corporate_gradient_background"
+                android:fontFamily="@font/poppins_light"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

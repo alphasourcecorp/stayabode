@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/rootLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_weight="0.1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/masala_dosa_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.9"
+            android:id="@+id/nameLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center_vertical"
+                android:text="FoodName"
+                android:textColor="#1E3854"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center_vertical"
+                android:text="Quantity"
+                android:textColor="#1E3854"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewOne"
+                android:layout_marginTop="3dp"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="#707070"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/image"
+                app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/deliveryDate"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="19dp"
+                android:visibility="gone"
+                android:background="@color/colorGrey"
+                app:layout_constraintLeft_toLeftOf="@+id/deliveryDate"
+                app:layout_constraintRight_toLeftOf="@+id/optionLayout"
+                app:layout_constraintTop_toBottomOf="@+id/deliveryDate" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:gravity="left|center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/chefImage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/view"
+                    android:visibility="gone"
+                    android:src="@drawable/user_profile_image"
+                    app:layout_constraintLeft_toLeftOf="@+id/deliveryDate"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/chefName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryDate"
+                    android:layout_alignTop="@+id/chefImage"
+                    android:layout_alignBottom="@+id/chefImage"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_toRightOf="@+id/chefImage"
+                    android:gravity="center_vertical"
+                    android:text="dfadg "
+                    android:visibility="gone"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Received"
+                    android:id="@+id/status"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginRight="25dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:layout_below="@id/deliveryDate"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="19dp"-->
+<!--        android:background="@color/colorGrey"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/rootLay" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

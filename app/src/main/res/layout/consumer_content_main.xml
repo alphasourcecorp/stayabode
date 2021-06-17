@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_consumer_main">
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainBottomLayout">
+    </FrameLayout>
+
+    <include
+        layout="@layout/bottom_more_menu_layout"
+        android:id="@+id/right_more_menu"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_above="@+id/mainBottomLayout"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mainBottomLayout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:id="@+id/dashboardView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:id="@+id/ordersView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:id="@+id/franchiseView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/reportsView"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:id="@+id/notificationView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorWhite"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@drawable/bottom_menu_item_selector_consumer"
+            android:background="@color/colorWhite"
+            app:itemTextColor="@drawable/bottom_menu_item_selector_consumer"
+            app:labelVisibilityMode="labeled"
+            android:focusable="false"
+            app:itemBackground="@color/colorStatusBarColor"
+            app:layout_anchor="@id/container"
+            app:layout_anchorGravity="bottom"
+            app:menu="@menu/consumer_bottom_menu_notification" />
+
+    </LinearLayout>
+
+</RelativeLayout>

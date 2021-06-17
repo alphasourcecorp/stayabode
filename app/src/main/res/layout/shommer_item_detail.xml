@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollLayout"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        app:behavior_overlapTop="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <!--        &lt;!&ndash;<include layout="@layout/activity_chapters" />&ndash;&gt;-->
+        <!--        <com.chalklit.widget.NonScrollListView-->
+        <!--            android:id="@+id/lv_modules_list"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="@android:color/white"-->
+        <!--            android:divider="@null"-->
+        <!--            android:scrollbars="none"></com.chalklit.widget.NonScrollListView>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="3dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/itemName"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#1E3854"
+                                android:background="@drawable/skeleton"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/oldPrice"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:background="@drawable/skeleton"
+                                    android:textColor="#1E3854"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/savedPrice"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:textColor="#1E3854"
+                                    android:background="@drawable/skeleton"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/newPrice"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:background="@drawable/skeleton"
+                                    android:textColor="#F7B917"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:background="@drawable/skeleton"
+                                    android:tint="#78797B" />
+
+                                <TextView
+                                    android:id="@+id/availableText"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:background="@drawable/skeleton"
+                                    android:textColor="#78797B"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:background="@drawable/skeleton" />
+
+                                <TextView
+                                    android:id="@+id/minsText"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:textColor="#78797B"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mealcontainsText"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text=""
+                                android:background="@drawable/skeleton"
+                                android:textColor="#112132"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center">
+
+                                            <ProgressBar
+                                                android:id="@+id/proteinprogressBar"
+                                                style="?android:attr/progressBarStyleHorizontal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/circle_shape"
+                                                android:indeterminate="false"
+                                                android:max="100"
+                                                android:progress="50"
+                                                android:progressDrawable="@drawable/protein_progressbarbg" />
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/proteinCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:gravity="center"
+                                                    android:text="50%"
+                                                    android:background="@drawable/skeleton"
+                                                    android:textColor="#78797B"
+                                                    android:textSize="9sp" />
+
+                                            </RelativeLayout>
+                                        </FrameLayout>
+
+
+                                        <TextView
+                                            android:id="@+id/protein"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:text="Protein"
+                                            android:background="@drawable/skeleton"
+                                            android:textColor="#78797B"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center">
+
+                                            <ProgressBar
+                                                android:id="@+id/carbsprogressBar"
+                                                style="?android:attr/progressBarStyleHorizontal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/circle_shape"
+                                                android:indeterminate="false"
+                                                android:max="100"
+                                                android:progress="20"
+                                                android:progressDrawable="@drawable/carbs_progressbarbg" />
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/carbsCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:gravity="center"
+                                                    android:text="20%"
+                                                    android:background="@drawable/skeleton"
+                                                    android:textColor="#78797B"
+                                                    android:textSize="9sp" />
+
+                                            </RelativeLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:id="@+id/carbs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:text="Carbs"
+                                            android:textColor="#78797B"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center">
+
+                                            <ProgressBar
+                                                android:id="@+id/fibreprogressBar"
+                                                style="?android:attr/progressBarStyleHorizontal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/circle_shape"
+                                                android:indeterminate="false"
+                                                android:max="100"
+                                                android:progress="20"
+                                                android:progressDrawable="@drawable/fibre_progressbarbg" />
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/fibreCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:gravity="center"
+                                                    android:text="20%"
+                                                    android:background="@drawable/skeleton"
+                                                    android:textColor="#78797B"
+                                                    android:textSize="9sp" />
+
+                                            </RelativeLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:id="@+id/fiberText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:text="Fiber"
+                                            android:textColor="#78797B"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center">
+
+                                            <ProgressBar
+                                                android:id="@+id/fatprogressBar"
+                                                style="?android:attr/progressBarStyleHorizontal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/circle_shape"
+                                                android:indeterminate="false"
+                                                android:max="100"
+                                                android:progress="10"
+                                                android:progressDrawable="@drawable/fat_progressbarbg" />
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/fatCount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:gravity="center"
+                                                    android:text="10%"
+                                                    android:textColor="#78797B"
+                                                    android:textSize="9sp" />
+
+                                            </RelativeLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:id="@+id/fatText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:text="Fat"
+                                            android:background="@drawable/skeleton"
+                                            android:textColor="#78797B"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/mealTypeHeader"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:text=""
+                        android:background="@drawable/skeleton"
+                        android:textColor="#78797B"
+                        android:textSize="14sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <RadioButton
+                            android:id="@+id/smallRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#707070"
+                            android:drawableTint="#707070"
+                            android:text=""
+                            android:background="@drawable/skeleton"
+                            android:textColor="#1E3854"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/mediumRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#707070"
+                            android:drawableTint="#707070"
+                            android:text=""
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/skeleton"
+                            android:textColor="#1E3854"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/largeRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#707070"
+                            android:drawableTint="#707070"
+                            android:text=""
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/skeleton"
+                            android:textColor="#1E3854"
+                            android:textSize="14sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#707070" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qtyHeader"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1E3854"
+                        android:background="@drawable/skeleton"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/decrease"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:background="@drawable/skeleton"
+                            android:textColor="#F7B917"
+                            android:textSize="45sp" />
+
+
+                        <TextView
+                            android:id="@+id/itemCount"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="center"
+                            android:background="@drawable/skeleton"
+                            android:textColor="#1E3854"
+                            android:textSize="34sp" />
+
+                        <TextView
+                            android:id="@+id/increase"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:background="@drawable/skeleton"
+                            android:textColor="#F7B917"
+                            android:textSize="45sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/totalAddedText"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/skeleton"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:textColor="#78797B"
+                    android:textSize="12sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#707070" />
+
+                <TextView
+                    android:id="@+id/speciaLRequestHeader"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:background="@drawable/skeleton"
+                    android:text=""
+                    android:textColor="#78797B"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tabEnterEditText"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/skeleton"
+                    android:gravity="left"
+                    android:hint="Tab to Enter"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#78797B"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/preferencesHeader"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:background="@drawable/skeleton"
+                    android:textColor="#78797B"
+                    android:textSize="14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#707070" />
+
+
+                <TextView
+                    android:id="@+id/subTotalbreakUpHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Sub Total Breakup"
+                    android:textColor="#78797B"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/mealHeader"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:text="Meal Price"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/mealPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:text="150"
+                            android:gravity="right"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/taxHeader"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:text="Total Tax"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/taxPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:text="150"
+                            android:gravity="right"
+
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/deliveryChargeHeader"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:text="Delivery Charge"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/deliveryPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:text="150"
+                            android:gravity="right"
+
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/subTotalHeader"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:text="Sub Total"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/subTotalPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:text="150"
+                            android:gravity="right"
+                            android:textColor="#1E3854"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/rating_star" />
+
+                            <TextView
+                                android:id="@+id/totalReviewCountText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5.0 based on 75 reviews "
+                                android:textColor="#78797B"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/reviewsLink"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoLink="all"
+                                android:linksClickable="false"
+                                android:selectAllOnFocus="false"
+                                android:text="Reviews"
+                                android:textColor="#F7B917"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="#F7B917" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#707070" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/user_profile_image" />
+
+                            <TextView
+                                android:id="@+id/preparedChefname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Prepared by Sachien "
+                                android:textColor="#78797B"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/infoLinkText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoLink="all"
+                                android:linksClickable="false"
+                                android:selectAllOnFocus="false"
+                                android:text="Info"
+                                android:textColor="#F7B917"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="#F7B917" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="150dp"
+                        android:background="#707070" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_gravity="bottom"
+        android:background="#00000029"
+        android:gravity="bottom"
+        app:layout_anchorGravity="bottom" />
+
+    <LinearLayout
+        android:id="@+id/bottomButton"
+        android:layout_below="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_anchorGravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00000029" />
+
+
+        <TextView
+            android:id="@+id/toaltPriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Total: 750"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00000029"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/addItemsButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/add_items_border"
+                android:text="Add Items"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/checkOutButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/checkout_border"
+                android:text="Checkout"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

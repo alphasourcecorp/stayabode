@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/progressBarLayout"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootLay"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:drawableRight="@drawable/consumer_filter"
+                android:hint="Search for cuisines, neighborhood..."
+                android:paddingHorizontal="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+<!--        <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_below="@+id/searchBar"-->
+<!--            android:id="@+id/shimmerLayout">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_category_item"/>-->
+
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_category_item"/>-->
+
+
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_category_item"/>-->
+
+
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_category_item"/>-->
+
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_category_item"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_food_item"/>-->
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_food_item"/>-->
+
+
+<!--                    <include-->
+<!--                        layout="@layout/shimmer_layout_food_item"/>-->
+
+
+
+
+<!--                </LinearLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+<!--        </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/searchBar" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F7B917"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:text="(1)Total 200"
+            android:textColor="#1E3854"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/checkoutText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="Checkout"
+            android:textColor="#1E3854"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

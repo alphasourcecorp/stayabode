@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/referFriendsRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#F7B917"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:theme="@style/ToolBarFont"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/arrow_left"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Refer Friends"
+        tools:targetApi="lollipop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/cartIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cart"
+
+                android:tint="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/cartTotalCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cartIcon"
+                app:layout_constraintLeft_toLeftOf="@+id/cartIcon"
+                app:layout_constraintRight_toRightOf="@+id/cartIcon"
+                app:layout_constraintTop_toTopOf="@+id/cartIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="#112132"-->
+                <!--                    android:text="Email"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:fontFamily="@font/poppins_light"/>-->
+
+
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    card_view:cardBackgroundColor="@color/colorWhite"-->
+                <!--                    card_view:cardElevation="3dp"-->
+                <!--                    card_view:contentPadding="5dp"-->
+                <!--                    app:cardCornerRadius="5dp"-->
+                <!--                    android:layout_marginLeft="1dp"-->
+                <!--                    android:layout_marginRight="1dp"-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    card_view:cardPreventCornerOverlap = "false">-->
+
+                <!--                    <EditText-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:hint="Email"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        android:id="@+id/email"-->
+                <!--                        android:maxLines="1"-->
+                <!--                        android:focusable="false"-->
+                <!--                        android:fontFamily="@font/poppins_light"-->
+                <!--                        android:paddingLeft="5dp"-->
+                <!--                        android:inputType="textEmailAddress"-->
+                <!--                        android:textColor="@color/colorConsumerNotifiactionText"-->
+                <!--                        android:background="@android:color/transparent"/>-->
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="#112132"-->
+                <!--                    android:text="Name"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    android:fontFamily="@font/poppins_light"/>-->
+
+
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    card_view:cardBackgroundColor="@color/colorWhite"-->
+                <!--                    card_view:cardElevation="3dp"-->
+                <!--                    card_view:contentPadding="5dp"-->
+                <!--                    android:layout_marginLeft="1dp"-->
+                <!--                    android:layout_marginRight="1dp"-->
+                <!--                    app:cardCornerRadius="5dp"-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    card_view:cardPreventCornerOverlap = "false">-->
+
+                <!--                    <EditText-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:hint="Name"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        android:id="@+id/name"-->
+                <!--                        android:paddingLeft="5dp"-->
+                <!--                        android:fontFamily="@font/poppins_light"-->
+                <!--                        android:textColor="@color/colorConsumerNotifiactionText"-->
+                <!--                        android:maxLines="1"-->
+                <!--                        android:inputType="text"-->
+                <!--                        android:background="@android:color/transparent"/>-->
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorYellow"
+                    android:gravity="center|center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center|start"
+                            android:text="Your Referral Code : "
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/myReferralCode_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center|start"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center|start"
+                            android:text="Add Friends"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/fullNameHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Name "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/et_border_form"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <EditText
+                                android:id="@+id/nameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/poppins_light"
+                                android:hint=""
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/colorConsumerNotifiactionText"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_3sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@color/colorWhite"
+                            android:text="         "
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/fullNameHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/et_border_form"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <EditText
+                                android:id="@+id/emailId"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/poppins_light"
+                                android:hint=""
+                                android:inputType="textEmailSubject"
+
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/colorConsumerNotifiactionText"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_3sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@color/colorWhite"
+                            android:inputType=""
+                            android:text="         "
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/fullNameHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Phone Number "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/et_border_form"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <EditText
+                                android:id="@+id/phonenumberId"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/poppins_light"
+                                android:hint=""
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/colorConsumerNotifiactionText"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_3sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@color/colorWhite"
+                            android:text="                    "
+                            android:textColor="@color/colorGreen"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addFriends"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@drawable/max_weight_bg"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="+"
+                            android:textAllCaps="false"
+                            android:textColor="#112132"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#1100000D"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center|left"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center|start"
+                                    android:text="Name"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="40"
+                                android:gravity="center|left"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:text="Email"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="20"
+                                android:gravity="center|left"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="start"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="Mobile no"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="10"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center|start"
+                                    android:text="Delete"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycleview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/submitButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/max_weight_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="OK"
+                        android:textAllCaps="false"
+                        android:textColor="#112132"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Enjoy our SIGN UP offer, earn 50 reward points and start ordering authentic home made food."
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    card_view:cardBackgroundColor="@color/colorWhite"-->
+                <!--                    card_view:cardElevation="3dp"-->
+                <!--                    card_view:contentPadding="5dp"-->
+                <!--                    android:layout_marginLeft="1dp"-->
+                <!--                    android:layout_marginRight="1dp"-->
+                <!--                    app:cardCornerRadius="5dp"-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    card_view:cardPreventCornerOverlap = "false">-->
+
+                <!--                    <EditText-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:hint="Phone Number"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        android:id="@+id/phoneNumber"-->
+                <!--                        android:paddingLeft="5dp"-->
+                <!--                        android:focusable="true"-->
+                <!--                        android:maxLength="10"-->
+                <!--                        android:fontFamily="@font/poppins_light"-->
+                <!--                        android:textColor="@color/colorConsumerNotifiactionText"-->
+                <!--                        android:maxLines="1"-->
+                <!--                        android:inputType="number"-->
+                <!--                        android:background="@android:color/transparent"/>-->
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bottomRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recyclerView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
